@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="QATestEpiaUI.Binaries">
+            <Component Id="com_8FB345F9_6CCB_4F75_8233_17F32B923B00" Guid="{6F21E710-9D52-4CA9-B57C-AA855D70D8DD}" Permanent="no" SharedDllRefCount="no" Transitive="no">
+                <File Id="_8FB345F9_6CCB_4F75_8233_17F32B923B00" Compressed="yes" DiskId="1" Hidden="no" KeyPath="yes" ReadOnly="no" System="no" Vital="yes" Source="$(var.QATestEpiaUI.TargetDir)\Egemin.Epia.Testing.QATestEpiaUI.exe" />
+            </Component>
+            <Component Id="cmp36A2F780E89E1A023C5307C1F61CA15C" Guid="{415F47C5-2A26-4CFA-89B4-72E13BA16B54}" Permanent="no" SharedDllRefCount="no" Transitive="no">
+                <File Id="fil309A5909E8BBC4FEC7350C0857446517" Compressed="yes" DiskId="1" Hidden="no" KeyPath="yes" ReadOnly="no" System="no" Vital="yes" Source="$(var.QATestEpiaUI.TargetDir)\Egemin.Epia.Testing.QATestEpiaUI.exe.config" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="QATestEpiaUI.Binaries">
+<ComponentRef Id="com_8FB345F9_6CCB_4F75_8233_17F32B923B00" />
+<ComponentRef Id="cmp36A2F780E89E1A023C5307C1F61CA15C" />
+</ComponentGroup>
+    </Fragment>
+</Wix>

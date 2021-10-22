@@ -1,0 +1,55 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\TFSQATestTools.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\TFSQATestTools.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\TFSQATestTools.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csprojResolveAssemblyReference.cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.Configuration.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.HostTestForm.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.ToolsForm.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.GenerateResource.Cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+C:\AutomaticTests\bin\Debug\TFSQATestTools.exe.config
+C:\AutomaticTests\bin\Debug\TFSQATestTools.exe
+C:\AutomaticTests\bin\Debug\TFSQATestTools.pdb
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csprojResolveAssemblyReference.cache
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.Configuration.resources
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.HostTestForm.resources
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.ToolsForm.resources
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.GenerateResource.Cache
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+C:\AutomaticTests\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+C:\AutomaticTestsVS2015\bin\Debug\TFSQATestTools.exe.config
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+C:\AutomaticTestsVS2015\bin\Debug\TFSQATestTools.exe
+C:\AutomaticTestsVS2015\bin\Debug\TFSQATestTools.pdb
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.Configuration.resources
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.HostTestForm.resources
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.ToolsForm.resources
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.GenerateResource.Cache
+H:\AutomaticTestsVS2015\bin\Debug\TFSQATestTools.exe.config
+H:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+H:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CoreCompileInputs.cache
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CopyComplete
+C:\AutomaticTestsVS2015\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.AssemblyReference.cache
+C:\AutomaticTests514\bin\Debug\TFSQATestTools.exe.config
+C:\AutomaticTests514\bin\Debug\TFSQATestTools.exe
+C:\AutomaticTests514\bin\Debug\TFSQATestTools.pdb
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csprojAssemblyReference.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.Configuration.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.HostTestForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.ToolsForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.GenerateResource.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CopyComplete
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb

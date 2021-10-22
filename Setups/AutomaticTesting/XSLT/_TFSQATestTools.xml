@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectOutput Name="TFSQATestTools" ProjectDirVar="$(var.TFSQATestTools.ProjectDir)" TargetDirVar="$(var.TFSQATestTools.TargetDir)" SharedFileId="_6B81B976_5480_46DA_AFE6_1AF0CB46359A">
+  <Binaries>
+    <DiskId>1</DiskId>
+    <Compressed>yes</Compressed>
+    <Hidden>no</Hidden>
+    <KeyPath>yes</KeyPath>
+    <ReadOnly>no</ReadOnly>
+    <System>no</System>
+    <Vital>yes</Vital>
+    <Permanent>no</Permanent>
+    <SharedDllRefCount>no</SharedDllRefCount>
+    <Transitive>no</Transitive>
+  </Binaries>
+</ProjectOutput>

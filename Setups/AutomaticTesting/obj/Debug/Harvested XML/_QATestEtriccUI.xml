@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="QATestEtriccUI.Binaries">
+            <Component Id="cmp0FDBFE2F975F5C5F5892264343A02A6F" Guid="{07C2B05E-4B97-49E1-9957-1B011443A7C1}">
+                <File Id="filF02BCFE1E20DCCB029DA0E09C681D653" Source="$(var.QATestEtriccUI.TargetDir)\Egemin.Epia.Testing.QATestEtriccUI.exe" />
+            </Component>
+            <Component Id="cmp594B619E3AB124E780D716944D5FCDC9" Guid="{057880AE-4D15-4EEC-96E2-B2E7955A532C}">
+                <File Id="fil2636B068BC5850123EF63B64063BF546" Source="$(var.QATestEtriccUI.TargetDir)\Egemin.Epia.Testing.QATestEtriccUI.exe.config" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="QATestEtriccUI.Binaries">
+            <ComponentRef Id="cmp0FDBFE2F975F5C5F5892264343A02A6F" />
+            <ComponentRef Id="cmp594B619E3AB124E780D716944D5FCDC9" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

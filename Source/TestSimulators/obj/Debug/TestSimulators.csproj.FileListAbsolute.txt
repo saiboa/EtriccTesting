@@ -1,0 +1,36 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\TestSimulators.TestSimulators.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.Properties.Resources.resources
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\TestSimulators.csproj.GenerateResource.Cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStore.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.Cache.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.RuleEngine.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\TestSimulators.csprojResolveAssemblyReference.cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\AutomaticTestsVS2015\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe.config
+C:\AutomaticTestsVS2015\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\AutomaticTestsVS2015\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\AutomaticTestsVS2015\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\TestSimulators.TestSimulators.resources
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.Properties.Resources.resources
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\TestSimulators.csproj.GenerateResource.Cache
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CoreCompileInputs.cache
+C:\AutomaticTestsVS2015\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CopyComplete
+C:\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe.config
+C:\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.TestSimulators.resources
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.Properties.Resources.resources
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.GenerateResource.cache
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CopyComplete
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.exe
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csprojAssemblyReference.cache

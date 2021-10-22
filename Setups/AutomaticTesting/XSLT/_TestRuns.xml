@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectOutput Name="TestRuns" ProjectDirVar="$(var.TestRuns.ProjectDir)" TargetDirVar="$(var.TestRuns.TargetDir)">
+  <Sources>
+    <DiskId>1</DiskId>
+    <Compressed>yes</Compressed>
+    <Hidden>no</Hidden>
+    <KeyPath>yes</KeyPath>
+    <ReadOnly>no</ReadOnly>
+    <System>no</System>
+    <Vital>yes</Vital>
+    <Permanent>no</Permanent>
+    <SharedDllRefCount>no</SharedDllRefCount>
+    <Transitive>no</Transitive>
+  </Sources>
+</ProjectOutput>

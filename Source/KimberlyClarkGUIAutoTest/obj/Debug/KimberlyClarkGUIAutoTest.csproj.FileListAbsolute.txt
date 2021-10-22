@@ -1,0 +1,10 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Egemin.Epia.Testing.KimberlyClarkGUIAutoTest.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\obj\Debug\KimberlyClarkGUIAutoTest.csprojResolveAssemblyReference.cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Egemin.Epia.Testing.KimberlyClarkGUIAutoTest.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Egemin.Epia.Testing.KimberlyClarkGUIAutoTest.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStore.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.Cache.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\bin\Debug\Microsoft.TeamFoundation.WorkItemTracking.Client.RuleEngine.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\obj\Debug\Egemin.Epia.Testing.KimberlyClarkGUIAutoTest.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\KimberlyClarkGUIAutoTest\obj\Debug\Egemin.Epia.Testing.KimberlyClarkGUIAutoTest.pdb

@@ -1,0 +1,63 @@
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.dll
+..\..\TestData\Ewcs\KC\note.txt
+..\..\TestData\Ewcs\KC\DropDatabase.bat
+C:\Windows\assembly\GAC_32\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStore\10.2.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStore.dll
+..\..\Source\QATestEpiaUI\EpiaShellFolderNET4Files.txt
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.VersionControl.Client.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEtriccUI.exe
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.Build.Common.dll
+..\..\Source\QATestEpiaUI\EpiaShellFolderFiles.txt
+..\..\OEM\Test\InputSimulator.dll
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+..\..\TestData\Etricc5\EurobalticWorkerActivate.vbs
+..\..\TestData\EtriccStatistics\EtriccStatistics.zip
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.Client.dll
+..\..\TestData\EtriccTests.zip
+C:\Windows\assembly\GAC_32\Microsoft.TeamFoundation.WorkItemTracking.Client.RuleEngine\10.2.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Client.RuleEngine.dll
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.Build.Client.dll
+..\..\TestData\Etricc\TestProject.zip
+..\..\TestData\Ewcs\KC\DBTestData.sql
+..\..\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\TFSQATestTools.exe
+C:\Windows\assembly\GAC_MSIL\Microsoft.TeamFoundation.WorkItemTracking.Proxy\10.0.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Proxy.dll
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.Common.dll
+..\..\TestData\Ewcs\KC\DropDatabase.sql
+..\..\TestData\EtriccStatistics\DropDatabaseEtriccStatistics_Test.bat
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\Windows\assembly\GAC_MSIL\Microsoft.TeamFoundation.VersionControl.Common\10.0.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.VersionControl.Common.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+..\..\TestData\Ewcs\KC\DBTestData.bat
+..\..\TestData\Etricc5\UnattendedXmlFile.xml
+C:\Windows\assembly\GAC_32\Microsoft.TeamFoundation.WorkItemTracking.Client.Cache\10.2.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Client.Cache.dll
+..\..\Source\QATestEpiaUI\EpiaServerFolderNET4Files20130226.txt
+..\..\TestData\Etricc5\TestProjectWorkerActivate.vbs
+..\..\TestData\Etricc\Demo.xml
+..\..\Source\QATestEpiaUI\EpiaServerFolderFiles.txt
+C:\Windows\assembly\GAC_MSIL\Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage\10.0.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.dll
+..\..\TestData\EtriccStatistics\DropDatabaseEtriccStatistics_Test.sql
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.TestTools.dll
+..\..\TestData\Etricc\Eurobaltic.zip
+..\..\OEM\Microsoft.TeamFoundation\Microsoft.TeamFoundation.Common.Library.dll
+C:\Windows\assembly\GAC_MSIL\Microsoft.TeamFoundation.VersionControl.Common.Integration\10.0.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.VersionControl.Common.Integration.dll
+..\..\TestData\Etricc5\TestProjectWorker.zip
+..\..\OEM\Microsoft\Microsoft.Office.Interop.Excel.dll
+..\..\bin\Debug\TFSQATestTools.exe
+..\..\TestData\Etricc5\EurobalticWorker.zip
+..\..\Source\QATestEpiaUI\EpiaServerFolderNET4Files.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEpiaProtected.exe
+..\..\OEM\SharpZipLib\ICSharpCode.SharpZipLib.dll
+C:\Windows\assembly\GAC_MSIL\Microsoft.TeamFoundation.WorkItemTracking.Client.Provision\10.0.0.0__b03f5f7f11d50a3a\Microsoft.TeamFoundation.WorkItemTracking.Client.Provision.dll
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\Logger.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEtriccUI.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEpiaProtected.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\TFSQATestTools.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEpiaUI.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestData.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestUtility.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestConstants.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestRuns.csproj
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestWorker.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\Properties\AssemblyInfo.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestRuns\\TestProjectWorker.cs
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\\Egemin.Epia.Testing.QATestEtriccStatistics.exe.config

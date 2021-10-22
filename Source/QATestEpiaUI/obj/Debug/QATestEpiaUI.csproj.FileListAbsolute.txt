@@ -1,0 +1,36 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\EpiaServerFolderFiles.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\EpiaServerFolderNET4Files.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\EpiaShellFolderFiles.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\EpiaShellFolderNET4Files.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\QATestEpiaUI.bat
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\AutomaticTestsVS2015\bin\Debug\EpiaServerFolderFiles.txt
+C:\AutomaticTestsVS2015\bin\Debug\EpiaServerFolderNET4Files.txt
+C:\AutomaticTestsVS2015\bin\Debug\EpiaShellFolderFiles.txt
+C:\AutomaticTestsVS2015\bin\Debug\EpiaShellFolderNET4Files.txt
+C:\AutomaticTestsVS2015\bin\Debug\QATestEpiaUI.bat
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe.config
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\AutomaticTestsVS2015\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\AutomaticTestsVS2015\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\AutomaticTestsVS2015\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CoreCompileInputs.cache
+C:\AutomaticTestsVS2015\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CopyComplete
+C:\AutomaticTestsVS2015\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csprojAssemblyReference.cache
+C:\AutomaticTests514\bin\Debug\EpiaServerFolderFiles.txt
+C:\AutomaticTests514\bin\Debug\EpiaServerFolderNET4Files.txt
+C:\AutomaticTests514\bin\Debug\EpiaShellFolderFiles.txt
+C:\AutomaticTests514\bin\Debug\EpiaShellFolderNET4Files.txt
+C:\AutomaticTests514\bin\Debug\QATestEpiaUI.bat
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe.config
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CopyComplete
+C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csprojAssemblyReference.cache

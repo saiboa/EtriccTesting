@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectOutput Name="QATestEtriccUI" ProjectDirVar="$(var.QATestEtriccUI.ProjectDir)" TargetDirVar="$(var.QATestEtriccUI.TargetDir)" SharedFileId="_2780F744_6039_4B13_A757_9D9FB666FDBC">
+  <Binaries>
+    <DiskId>1</DiskId>
+    <Compressed>yes</Compressed>
+    <Hidden>no</Hidden>
+    <KeyPath>yes</KeyPath>
+    <ReadOnly>no</ReadOnly>
+    <System>no</System>
+    <Vital>yes</Vital>
+    <Permanent>no</Permanent>
+    <SharedDllRefCount>no</SharedDllRefCount>
+    <Transitive>no</Transitive>
+  </Binaries>
+</ProjectOutput>

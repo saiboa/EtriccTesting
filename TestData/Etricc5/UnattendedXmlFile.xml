@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+
+<UnattendedConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LauncherData>
+    <ServiceConfiguration>true</ServiceConfiguration>
+    <ServiceManagement>true</ServiceManagement>
+    <AlarmBanner>false</AlarmBanner>
+    <WCSProductSpecific>true</WCSProductSpecific>
+    <WCSSystemOverview>true</WCSSystemOverview>
+    <WCSSystemStatus>false</WCSSystemStatus>
+    <WCSVehicleStatus>true</WCSVehicleStatus>
+    <WCSAllJobsStatus>false</WCSAllJobsStatus>
+    <WCSTransportStatus>true</WCSTransportStatus>
+    <WCSLocationStatus>true</WCSLocationStatus>
+    <WCSStationStatus>true</WCSStationStatus>
+    <WCSLoadStatus>true</WCSLoadStatus>
+    <WCSFieldFunctionStatus>true</WCSFieldFunctionStatus>
+    <WCSFieldPortStatus>false</WCSFieldPortStatus>
+    <WCSGroupStatus>false</WCSGroupStatus>
+    <WCSApplicationStatus>false</WCSApplicationStatus>
+    <WCSOpcStatus>false</WCSOpcStatus>
+    <WCSAlarmStatus>false</WCSAlarmStatus>
+    <WCSEngineering>false</WCSEngineering>
+  </LauncherData>
+  <SecurityData>
+    <EnableSecurity>false</EnableSecurity>
+    <UseWindowsIntegratedSecurity>false</UseWindowsIntegratedSecurity>
+    <ClientSessionTimeOutInMin>1</ClientSessionTimeOutInMin>
+  </SecurityData>
+  <RemoveRegistryKeys>false</RemoveRegistryKeys>
+</UnattendedConfig>

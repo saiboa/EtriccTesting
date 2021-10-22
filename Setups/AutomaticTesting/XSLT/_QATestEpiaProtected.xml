@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectOutput Name="QATestEpiaProtected" ProjectDirVar="$(var.QATestEpiaProtected.ProjectDir)" TargetDirVar="$(var.QATestEpiaProtected.TargetDir)" SharedFileId="_F635D6C4_53E0_4809_95B7_11C56A8E1C44">
+  <Binaries>
+    <DiskId>1</DiskId>
+    <Compressed>yes</Compressed>
+    <Hidden>no</Hidden>
+    <KeyPath>yes</KeyPath>
+    <ReadOnly>no</ReadOnly>
+    <System>no</System>
+    <Vital>yes</Vital>
+    <Permanent>no</Permanent>
+    <SharedDllRefCount>no</SharedDllRefCount>
+    <Transitive>no</Transitive>
+  </Binaries>
+</ProjectOutput>

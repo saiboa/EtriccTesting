@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TFSQATestTools.Binaries">
+            <Component Id="cmp194221CB26D924414587E7945E61CD52" Guid="{00B315C0-47CB-4132-85AF-686349599E71}">
+                <File Id="fil0CBAB161CABC579D2AA0C93E3C149338" Source="$(var.TFSQATestTools.TargetDir)\TFSQATestTools.exe" />
+            </Component>
+            <Component Id="cmpC96DDDC743C93117B585F306E3D9526B" Guid="{BB79118B-32E8-4C07-B88B-4CA9344E3EB7}">
+                <File Id="fil2EF98617D722B08DD3504FA82FA510A6" Source="$(var.TFSQATestTools.TargetDir)\TFSQATestTools.exe.config" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="TFSQATestTools.Binaries">
+            <ComponentRef Id="cmp194221CB26D924414587E7945E61CD52" />
+            <ComponentRef Id="cmpC96DDDC743C93117B585F306E3D9526B" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

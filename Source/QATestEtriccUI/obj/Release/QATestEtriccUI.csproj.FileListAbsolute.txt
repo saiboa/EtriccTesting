@@ -1,0 +1,1 @@
+C:\AutomaticTests514\Source\QATestEtriccUI\obj\Release\QATestEtriccUI.csproj.CoreCompileInputs.cache

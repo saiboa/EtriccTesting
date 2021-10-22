@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.7</ProductVersion>
+    <ProjectGuid>{2FF878E3-7BA5-499B-8BA8-F0A9D49D324E}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>AutomaticTesting</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <Name>AutomaticTesting</Name>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>..\..\Installation\Setup\</OutputPath>
+    <DefineConstants />
+    <SuppressSpecificWarnings>1076;1072</SuppressSpecificWarnings>
+    <SuppressIces>ICE30;ICE80</SuppressIces>
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\..\Installation\Setup\</OutputPath>
+    <DefineConstants />
+    <SuppressSpecificWarnings>1076;1072</SuppressSpecificWarnings>
+    <SuppressIces>ICE30;ICE80</SuppressIces>
+    <VerboseOutput>True</VerboseOutput>
+    <SuppressPdbOutput>True</SuppressPdbOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DefineConstants />
+    <SuppressSpecificWarnings>1076;1072</SuppressSpecificWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\WiXDefBannerBitmap.bmp" />
+    <Content Include="Resources\WiXNewFolderBtn.ico" />
+    <Content Include="Resources\WiXUpFolderBtn.ico" />
+    <Content Include="XSLT\RegisterForCOM.xml" />
+    <Content Include="XSLT\XslFile.xslt" />
+    <Content Include="XSLT\XslRegisterForCOM.xslt" />
+    <Content Include="XSLT\XslProjectOutput.xslt" />
+    <Content Include="XSLT\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XSLT\_QATestEpiaProtected.xml" />
+    <Content Include="XSLT\_QATestEpiaUI.xml" />
+    <Content Include="XSLT\_QATestEtriccStatistics.xml" />
+    <Content Include="XSLT\_QATestEtriccUI.xml" />
+    <Content Include="XSLT\_TestRuns.xml" />
+    <Content Include="XSLT\_TestTools.xml" />
+    <Content Include="XSLT\_TestToolsWatcher.xml" />
+    <Content Include="XSLT\_TFSQATestTools.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\QATestEpiaProtected\QATestEpiaProtected.csproj">
+      <Name>QATestEpiaProtected</Name>
+      <Project>{323D246B-0386-4DCF-B694-4B74DA54E624}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\QATestEpiaUI\QATestEpiaUI.csproj">
+      <Name>QATestEpiaUI</Name>
+      <Project>{DE34F50F-0E7F-434B-8EB5-3A91F62B3534}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\QATestEtriccStatistics\QATestEtriccStatistics.csproj">
+      <Name>QATestEtriccStatistics</Name>
+      <Project>{C774320F-821A-43E4-BB3F-A57C09DE581B}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\QATestEtriccUI\QATestEtriccUI.csproj">
+      <Name>QATestEtriccUI</Name>
+      <Project>{C3C00E3A-AC86-4942-ABC3-231B017986A6}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\TestRuns\TestRuns.csproj">
+      <Name>TestRuns</Name>
+      <Project>{75330901-EDF1-4E80-B9FF-8F784FD721F9}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Sources</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\TestToolsWatcher\TestToolsWatcher.csproj">
+      <Name>TestToolsWatcher</Name>
+      <Project>{811617b9-e61b-4de0-89a2-0877b115ad51}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\TestTools\TestTools.csproj">
+      <Name>TestTools</Name>
+      <Project>{F0BE061A-04C7-4457-9AA6-E88E5BC570E4}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Source\TFSQATestTools\TFSQATestTools.csproj">
+      <Name>TFSQATestTools</Name>
+      <Project>{901D6B51-1816-436C-9B62-A50BF3D97F18}</Project>
+      <Private>True</Private>
+      <DoNotHarvest />
+      <RefProjectOutputGroups>Binaries</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+      <ImportedFromVDProj>True</ImportedFromVDProj>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixNetFxExtension">
+      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+      <Name>WixNetFxExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources" />
+    <Folder Include="XSLT\" />
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <Target Name="BeforeBuild">
+    <!-- Create temporary directory for XML files -->
+    <MakeDir Directories="$(IntermediateOutputPath)Harvested XML" />
+    <!-- Create a directory for harvested WSX files -->
+    <MakeDir Directories="$(IntermediateOutputPath)Harvested Output" />
+    <!-- Read the RegisterForCOM.xml file and create a file with the list of files which should be registered for COM -->
+    <XslTransformation XmlInputPaths="XSLT\RegisterForCOM.xml" XslInputPath="XSLT\XslRegisterForCOM.xslt" OutputPaths="$(IntermediateOutputPath)_COMFiles.txt" Parameters="&lt;Parameter Name='operationType' Value='HeatFiles'/&gt;&lt;Parameter Name='intermediateDir' Value='$(IntermediateOutputPath)'/&gt;" />
+    <!-- Load the list of COM files to the COMFilelist variable -->
+    <ReadLinesFromFile File="$(IntermediateOutputPath)_COMFiles.txt">
+      <Output TaskParameter="Lines" ItemName="COMFilelist" />
+    </ReadLinesFromFile>
+    <!-- Resolve paths to the COM files -->
+    <ConvertToAbsolutePath Paths="@(COMFilelist)">
+      <Output TaskParameter="AbsolutePaths" ItemName="ResolvedCOMFilelist" />
+    </ConvertToAbsolutePath>
+    <!-- Extract the registy information from the list of COM files and store it to temporary XML files -->
+    <Exec Command="&quot;$(Wix)Bin\heat.exe&quot; file &quot;%(ResolvedCOMFilelist.Identity)&quot; -sw -gg -sfrag -nologo -srd -out &quot;$(IntermediateOutputPath)Harvested XML\_%(Filename).com.xml&quot;" IgnoreExitCode="false" WorkingDirectory="$(MSBuildProjectDirectory)" Condition="'%(ResolvedCOMFilelist.Identity)'!=''" />
+    <!-- Read the RegisterForCOM.xml file and create a file with the list of XML files created in the previous operation -->
+    <XslTransformation XmlInputPaths="XSLT\RegisterForCOM.xml" XslInputPath="XSLT\XslRegisterForCOM.xslt" OutputPaths="$(IntermediateOutputPath)_COMFiles.txt" Parameters="&lt;Parameter Name='operationType' Value='TransformFiles'/&gt;&lt;Parameter Name='intermediateDir' Value='$(IntermediateOutputPath)Harvested XML\'/&gt;" />
+    <!-- Load the list of XML files to the XMLFileList variable -->
+    <ReadLinesFromFile File="$(IntermediateOutputPath)_COMFiles.txt">
+      <Output TaskParameter="Lines" ItemName="XMLFileList" />
+    </ReadLinesFromFile>
+    <!-- Process the XML files to create the final WSX files with the registy information -->
+    <XslTransformation XmlInputPaths="%(XMLFileList.Identity)" XslInputPath="XSLT\XslFile.xslt" OutputPaths="$(IntermediateOutputPath)Harvested Output\%(Filename).wsx" Parameters="&lt;Parameter Name='sourceFilePath' Value='%(XMLFileList.Identity)'/&gt;" Condition="'%(XMLFileList.Identity)'!=''" />
+    <!-- Generate WSX files from project references -->
+    <Exec Command="&quot;$(Wix)Bin\heat.exe&quot; project &quot;%(ProjectReference.FullPath)&quot; -projectname &quot;%(ProjectReference.Name)&quot; -pog %(ProjectReference.RefProjectOutputGroups) -gg -sfrag -nologo -out &quot;$(IntermediateOutputPath)Harvested XML\_%(ProjectReference.Name).xml&quot;" IgnoreExitCode="false" WorkingDirectory="$(MSBuildProjectDirectory)" Condition="'%(ProjectReference.FullPath)'!='' And '%(ProjectReference.DoNotHarvest)'!='True' And '%(ProjectReference.ImportedFromVDProj)'=='True'" />
+    <HeatProject Project="%(ProjectReference.FullPath)" ProjectName="%(ProjectReference.Name)" OutputFile="$(IntermediateOutputPath)Harvested XML\_%(ProjectReference.Name).xml" ProjectOutputGroups="%(ProjectReference.RefProjectOutputGroups)" ToolPath="$(Wix)Bin\" SuppressAllWarnings="true" AutogenerateGuids="false" GenerateGuidsNow="true" SuppressFragments="true" SuppressUniqueIds="false" Condition="'%(ProjectReference.FullPath)'!='' And '%(ProjectReference.DoNotHarvest)'!='True' And '%(ProjectReference.ImportedFromVDProj)'!='True'" />
+    <!-- Process the XML files to create the final WSX files with the registy information for each project reference -->
+    <XslTransformation XmlInputPaths="$(IntermediateOutputPath)Harvested XML\_%(ProjectReference.Name).xml" XslInputPath="XSLT\XslProjectOutput.xslt" OutputPaths="$(IntermediateOutputPath)Harvested Output\_%(ProjectReference.Name).wxs" Parameters="&lt;Parameter Name='projectName' Value='%(ProjectReference.Name)'/&gt;&lt;Parameter Name='projectFilePath' Value='%(ProjectReference.FullPath)'/&gt;&lt;Parameter Name='intermediateDir' Value='$(IntermediateOutputPath)Harvested Output\'/&gt;" Condition="'%(ProjectReference.FullPath)'!='' And '%(ProjectReference.DoNotHarvest)'!='True' And Exists('$(IntermediateOutputPath)Harvested XML\_%(ProjectReference.Name).xml')" />
+    <!-- Read the RegisterForCOM.xml file and create a file with the list of WSX files which should be included in the project -->
+    <XslTransformation XmlInputPaths="XSLT\RegisterForCOM.xml" XslInputPath="XSLT\XslRegisterForCOM.xslt" OutputPaths="$(IntermediateOutputPath)_COMFiles.txt" Parameters="&lt;Parameter Name='operationType' Value='CompileFiles'/&gt;&lt;Parameter Name='intermediateDir' Value='$(IntermediateOutputPath)Harvested Output\'/&gt;" />
+    <!-- Load the list of WSX files to the WSXFileList variable -->
+    <ReadLinesFromFile File="$(IntermediateOutputPath)_COMFiles.txt">
+      <Output TaskParameter="Lines" ItemName="WSXFileList" />
+    </ReadLinesFromFile>
+    <!-- Include generated WSX files in the project -->
+    <CreateItem Include="$(IntermediateOutputPath)Harvested Output\_%(ProjectReference.Name).wxs" Condition="'%(ProjectReference.FullPath)'!='' And '%(ProjectReference.DoNotHarvest)'!='True' And Exists('$(IntermediateOutputPath)Harvested Output\_%(ProjectReference.Name).wxs')">
+      <Output TaskParameter="Include" ItemName="Compile" />
+    </CreateItem>
+    <CreateItem Include="@(WSXFileList)" Condition="Exists('%(WSXFileList.Identity)')">
+      <Output TaskParameter="Include" ItemName="Compile" />
+    </CreateItem>
+  </Target>
+  <Target Name="AfterBuild">
+    <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+      <!-- Add bootstrapper items here -->
+      <BootstrapperFile Include=".NETFramework,Version=v4.0">
+        <ProductName>Microsoft .NET Framework 4 (x86 and x64)</ProductName>
+      </BootstrapperFile>
+      <BootstrapperFile Include="Microsoft.Windows.Installer.4.5">
+        <ProductName>Windows Installer 4.5</ProductName>
+      </BootstrapperFile>
+    </ItemGroup>
+    <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+      <!-- Add bootstrapper items here -->
+      <BootstrapperFile Include="Microsoft.Net.Framework.3.5.SP1">
+        <ProductName>.NET Framework 3.5 SP1</ProductName>
+      </BootstrapperFile>
+      <BootstrapperFile Include="Microsoft.Windows.Installer.3.1">
+        <ProductName>Windows Installer 3.1</ProductName>
+      </BootstrapperFile>
+    </ItemGroup>
+    <GenerateBootstrapper ApplicationFile="$(TargetFileName)" ApplicationName="AutomaticTesting" BootstrapperItems="@(BootstrapperFile)" ComponentsLocation="HomeSite" CopyComponents="False" OutputPath="$(OutputPath)" Path="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\BootStrapper" ApplicationRequiresElevation="True" Culture="en-US" Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' " />
+    <GenerateBootstrapper ApplicationFile="$(TargetFileName)" ApplicationName="AutomaticTesting" BootstrapperItems="@(BootstrapperFile)" ComponentsLocation="HomeSite" CopyComponents="False" OutputPath="$(OutputPath)" Path="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\BootStrapper" ApplicationRequiresElevation="True" Culture="en-US" Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' " />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

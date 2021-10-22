@@ -1,0 +1,1922 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ID xsi:type="xsd:string">EuroBaltic - EPMS</ID>
+  <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+  <LogMessages />
+  <LastMessage>
+    <TextDef>
+      <Arguments />
+    </TextDef>
+  </LastMessage>
+  <LastErrorMessage>
+    <TextDef>
+      <Arguments />
+    </TextDef>
+  </LastErrorMessage>
+  <LastErrorMessageDate>
+    0001-01-01T00:00:00.0000000+01:00
+  </LastErrorMessageDate>
+  <LastRunVersion />
+  <LastRunActivated>
+    0001-01-01T00:00:00.0000000+01:00
+  </LastRunActivated>
+  <LastRunDeactivated>
+    0001-01-01T00:00:00.0000000+01:00
+  </LastRunDeactivated>
+  <LastRunDuration>0</LastRunDuration>
+  <BaseDir />
+  <Version />
+  <Name />
+  <Description />
+  <RuntimeDbSerializers />
+  <Parameters>
+    <anyType xsi:type="Parameter">
+      <ID xsi:type="xsd:string">MaxDesktopClients</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Type>INT</Type>
+      <MinValue>0</MinValue>
+      <MaxValue>999</MaxValue>
+      <DefaultValue>0</DefaultValue>
+      <Description>
+        Maximum number of desktop clients (0 = unlimited)
+      </Description>
+    </anyType>
+    <anyType xsi:type="Parameter">
+      <ID xsi:type="xsd:string">MaxPdaClients</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Type>INT</Type>
+      <MinValue>0</MinValue>
+      <MaxValue>999</MaxValue>
+      <DefaultValue>0</DefaultValue>
+      <Description>
+        Maximum number of PDA clients (0 = unlimited)
+      </Description>
+    </anyType>
+    <anyType xsi:type="Parameter">
+      <ID xsi:type="xsd:string">MaxSessionFiles</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Type>INT</Type>
+      <MinValue>0</MinValue>
+      <MaxValue>999</MaxValue>
+      <DefaultValue>7</DefaultValue>
+      <Description>
+        Maximum number of session files
+      </Description>
+    </anyType>
+  </Parameters>
+  <Logger>
+    <ID xsi:type="xsd:string">Logger</ID>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <LogMessages />
+    <LastMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastMessage>
+    <LastErrorMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastErrorMessage>
+    <LastErrorMessageDate>
+      0001-01-01T00:00:00.0000000+01:00
+    </LastErrorMessageDate>
+    <LastRunDuration>0</LastRunDuration>
+    <Parameters>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxLogFiles</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>1</MinValue>
+        <MaxValue>365</MaxValue>
+        <DefaultValue>7</DefaultValue>
+        <Description>
+          Maximum number of log files
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxLogFileSize</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>999</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>
+          Maximum log file size in MB
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxLogZipFiles</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>9990</MaxValue>
+        <DefaultValue>14</DefaultValue>
+        <Description>
+          Maximum number of zipped log files
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxStatFiles</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>1</MinValue>
+        <MaxValue>8760</MaxValue>
+        <DefaultValue>168</DefaultValue>
+        <Description>
+          Maximum number of statistical files
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxStatFileSize</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>99</MaxValue>
+        <DefaultValue>10</DefaultValue>
+        <Description>
+          Maximum statistical file size in MB
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MaxStatZipFiles</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>99999</MaxValue>
+        <DefaultValue>504</DefaultValue>
+        <Description>
+          Maximum number of zipped statistical files
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">MinDiskSpace</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>1000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>
+          Minimum disk space in MB
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Timebase</ID>
+        <ContextID xsi:type="xsd:string">Logger</ContextID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>60000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>Timebase in mSec</Description>
+      </anyType>
+    </Parameters>
+    <ClipboardSize>32</ClipboardSize>
+    <ClipboardEnabled>true</ClipboardEnabled>
+    <ClipboardLevel>DEBUG</ClipboardLevel>
+    <ConsoleEnabled>true</ConsoleEnabled>
+    <ConsoleLevel>DEBUG</ConsoleLevel>
+    <DatabaseEnabled>false</DatabaseEnabled>
+    <DatabaseLevel>INFO</DatabaseLevel>
+    <EventViewerEnabled>true</EventViewerEnabled>
+    <EventViewerLevel>INFO</EventViewerLevel>
+    <FileLogEnabled>true</FileLogEnabled>
+    <FileLogLevel>INFO</FileLogLevel>
+    <MessageQueueSize>100</MessageQueueSize>
+    <MessageQueueEnabled>false</MessageQueueEnabled>
+    <MessageQueueLevel>INFO</MessageQueueLevel>
+    <TraceEnabled>true</TraceEnabled>
+    <TraceLevel>INFO</TraceLevel>
+    <Clipboard />
+    <StatisticsEnabled>false</StatisticsEnabled>
+    <DatabaseConnectionString />
+    <DatabaseTableName />
+    <MessageQueueName />
+  </Logger>
+  <Monitor>
+    <ID xsi:type="xsd:string">Monitor</ID>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <LogMessages />
+    <LastMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastMessage>
+    <LastErrorMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastErrorMessage>
+    <LastErrorMessageDate>
+      0001-01-01T00:00:00.0000000+01:00
+    </LastErrorMessageDate>
+    <LastRunDuration>0</LastRunDuration>
+    <Parameters>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Timebase</ID>
+        <ContextID xsi:type="xsd:string">Monitor</ContextID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>60000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>Timebase in mSec</Description>
+      </anyType>
+    </Parameters>
+    <WebServiceUrls />
+  </Monitor>
+  <LicenseFile />
+  <Facilities>
+    <anyType xsi:type="Facility">
+      <ID xsi:type="xsd:string">Mover Status</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Parameters>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">ItemColorName</ID>
+          <ContextID xsi:type="xsd:string">Mover Status</ContextID>
+          <Type>STRING</Type>
+          <Value>Color</Value>
+          <Description>
+            Name of property containing the color to be shown.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">Properties</ID>
+          <ContextID xsi:type="xsd:string">Mover Status</ContextID>
+          <Type>TOKENISER</Type>
+          <Value>ID	Result</Value>
+          <Description>
+            Properties shown in columns of status screen.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">RefreshCount</ID>
+          <ContextID xsi:type="xsd:string">Mover Status</ContextID>
+          <Type>INT</Type>
+          <Value>0</Value>
+          <Description>
+            Screen will be refreshed every RefreshCount seconds.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseChangeEvent</ID>
+          <ContextID xsi:type="xsd:string">Mover Status</ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Determines wether to update items in the screen on a Refresh event.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseListViewEx</ID>
+          <ContextID xsi:type="xsd:string">Mover Status</ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Make use of Extended funtionality in ListViews
+          </Description>
+        </anyType>
+      </Parameters>
+    </anyType>
+    <anyType xsi:type="Facility">
+      <ID xsi:type="xsd:string">Transport Status</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Parameters>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">ItemColorName</ID>
+          <ContextID xsi:type="xsd:string">Transport Status</ContextID>
+          <Type>STRING</Type>
+          <Value>Color</Value>
+          <Description>
+            Name of property containing the color to be shown.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">Properties</ID>
+          <ContextID xsi:type="xsd:string">Transport Status</ContextID>
+          <Type>TOKENISER</Type>
+          <Value>
+            ID	State	Reply.ID	Reply.Code	Command	SourceID	DestinationID	LoadID
+          </Value>
+          <Description>
+            Properties shown in columns of status screen.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">RefreshCount</ID>
+          <ContextID xsi:type="xsd:string">Transport Status</ContextID>
+          <Type>INT</Type>
+          <Value>0</Value>
+          <Description>
+            Screen will be refreshed every RefreshCount seconds.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseChangeEvent</ID>
+          <ContextID xsi:type="xsd:string">Transport Status</ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Determines wether to update items in the screen on a Refresh event.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseListViewEx</ID>
+          <ContextID xsi:type="xsd:string">Transport Status</ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Make use of Extended funtionality in ListViews
+          </Description>
+        </anyType>
+      </Parameters>
+    </anyType>
+    <anyType xsi:type="Facility">
+      <ID xsi:type="xsd:string">
+        TransportSequence Status
+      </ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <Parameters>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">ItemColorName</ID>
+          <ContextID xsi:type="xsd:string">
+            TransportSequence Status
+          </ContextID>
+          <Type>STRING</Type>
+          <Value>Color</Value>
+          <Description>
+            Name of property containing the color to be shown.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">Properties</ID>
+          <ContextID xsi:type="xsd:string">
+            TransportSequence Status
+          </ContextID>
+          <Type>TOKENISER</Type>
+          <Value>
+            ID	Mode	LoadID	StepID	WaitTransitionReason_Step	StepState	WaitTransitionReason_StepState	TransportID
+          </Value>
+          <Description>
+            Properties shown in columns of status screen.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">RefreshCount</ID>
+          <ContextID xsi:type="xsd:string">
+            TransportSequence Status
+          </ContextID>
+          <Type>INT</Type>
+          <Value>0</Value>
+          <Description>
+            Screen will be refreshed every RefreshCount seconds.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseChangeEvent</ID>
+          <ContextID xsi:type="xsd:string">
+            TransportSequence Status
+          </ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Determines wether to update items in the screen on a Refresh event.
+          </Description>
+        </anyType>
+        <anyType xsi:type="Parameter">
+          <ID xsi:type="xsd:string">UseListViewEx</ID>
+          <ContextID xsi:type="xsd:string">
+            TransportSequence Status
+          </ContextID>
+          <Type>BOOL</Type>
+          <Value>True</Value>
+          <Description>
+            Make use of Extended funtionality in ListViews
+          </Description>
+        </anyType>
+      </Parameters>
+    </anyType>
+  </Facilities>
+  <HostPort>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <LogMessages />
+    <LastMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastMessage>
+    <LastErrorMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastErrorMessage>
+    <LastErrorMessageDate>
+      0001-01-01T00:00:00.0000000+01:00
+    </LastErrorMessageDate>
+    <Type>TCPIP</Type>
+    <State>NOT_READY</State>
+    <Mode>NORMAL</Mode>
+    <Suspended>false</Suspended>
+    <Parameters>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverAckChars</ID>
+        <Type>TOKENISER</Type>
+        <Value>6	3</Value>
+        <DefaultValue>6</DefaultValue>
+        <Description>
+          Driver acknowledge characters
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverAddress</ID>
+        <Type>STRING</Type>
+        <Value>localhost</Value>
+        <DefaultValue>LOCALHOST</DefaultValue>
+        <Description>Driver address</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverConfig</ID>
+        <Type>STRING</Type>
+        <Description>
+          Driver configuration string
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverConfirm</ID>
+        <Type>BOOL</Type>
+        <Value>True</Value>
+        <DefaultValue>False</DefaultValue>
+        <Description>
+          Driver confirmation flag
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverEncoding</ID>
+        <Type>STRING</Type>
+        <DefaultValue>ASCII</DefaultValue>
+        <Validation>ASCII	UNICODE</Validation>
+        <Description>Driver encoding</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverEndChars</ID>
+        <Type>TOKENISER</Type>
+        <Value>3</Value>
+        <DefaultValue>3</DefaultValue>
+        <Description>
+          Driver end characters
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverLocalPort</ID>
+        <Type>STRING</Type>
+        <DefaultValue>50002</DefaultValue>
+        <Description>Driver local port</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverMode</ID>
+        <Type>STRING</Type>
+        <DefaultValue>CLIENT</DefaultValue>
+        <Validation>CLIENT	SERVER	DUAL</Validation>
+        <Description>Driver mode</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverRcvBufferSize</ID>
+        <Type>INT</Type>
+        <MinValue>4096</MinValue>
+        <MaxValue>131072</MaxValue>
+        <DefaultValue>8192</DefaultValue>
+        <Description>
+          Driver receive buffer size
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverRemotePort</ID>
+        <Type>STRING</Type>
+        <DefaultValue>50001</DefaultValue>
+        <Description>Driver remote port</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">
+          DriverSocketRcvBufferSize
+        </ID>
+        <Type>INT</Type>
+        <MinValue>4096</MinValue>
+        <MaxValue>131072</MaxValue>
+        <DefaultValue>8192</DefaultValue>
+        <Description>
+          Driver socket receive buffer size
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">
+          DriverSocketSndBufferSize
+        </ID>
+        <Type>INT</Type>
+        <MinValue>4096</MinValue>
+        <MaxValue>131072</MaxValue>
+        <DefaultValue>64512</DefaultValue>
+        <Description>
+          Driver socket send buffer size
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">DriverStartChars</ID>
+        <Type>TOKENISER</Type>
+        <Description>
+          Driver start characters
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">KeepAlivePeriod</ID>
+        <Type>INT</Type>
+        <Value>10</Value>
+        <MinValue>0</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>5</DefaultValue>
+        <Description>
+          Send 'keepalive' message period in Seconds (0 = disabled)
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">KeepAliveTimeout</ID>
+        <Type>INT</Type>
+        <Value>60</Value>
+        <MinValue>0</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>15</DefaultValue>
+        <Description>
+          Receive 'keepalive' message timeout in Seconds (0 = disabled)
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">KeepAliveType</ID>
+        <Type>STRING</Type>
+        <DefaultValue>MESSAGE</DefaultValue>
+        <Validation>DRIVER	MESSAGE</Validation>
+        <Description>
+          Defines the 'keepalive' message type
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Priority</ID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>10</MaxValue>
+        <DefaultValue>0</DefaultValue>
+        <Description>Priority</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">ReplyDelivered</ID>
+        <Type>BOOL</Type>
+        <DefaultValue>True</DefaultValue>
+        <Description>
+          Reply on receive message delivered
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">ReplyRequired</ID>
+        <Type>BOOL</Type>
+        <DefaultValue>False</DefaultValue>
+        <Description>
+          Reply on send message required
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">ReplyTimeout</ID>
+        <Type>INT</Type>
+        <MinValue>1</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>30</DefaultValue>
+        <Description>
+          Reply message timeout in Seconds
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">RetryCount</ID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>100</MaxValue>
+        <DefaultValue>10</DefaultValue>
+        <Description>
+          Connection retry count (0 = disabled)
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">RetryTimeout</ID>
+        <Type>INT</Type>
+        <MinValue>1</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>3</DefaultValue>
+        <Description>
+          Connection retry timeout in Seconds
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">SendTimeout</ID>
+        <Type>INT</Type>
+        <MinValue>1</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>2</DefaultValue>
+        <Description>
+          Send message timeout in Seconds
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Timebase</ID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>60000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>Timebase in mSec</Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">
+          UseDriverSocketRcvBufferSizeParameter
+        </ID>
+        <Type>BOOL</Type>
+        <DefaultValue>False</DefaultValue>
+        <Description>
+          Use the driver socket receive buffer size parameter
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">
+          UseDriverSocketSndBufferSizeParameter
+        </ID>
+        <Type>BOOL</Type>
+        <DefaultValue>False</DefaultValue>
+        <Description>
+          Use the driver socket send buffer size parameter
+        </Description>
+      </anyType>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">WatchDogTimeout</ID>
+        <Type>INT</Type>
+        <MinValue>0</MinValue>
+        <MaxValue>3600</MaxValue>
+        <DefaultValue>30</DefaultValue>
+        <Description>
+          Watchdog timeout in Seconds (0 = disabled)
+        </Description>
+      </anyType>
+    </Parameters>
+    <HostDriver>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <State>UNDEFINED</State>
+      <Mode>UNDEFINED</Mode>
+      <Encoding>UNDEFINED</Encoding>
+      <Confirm>false</Confirm>
+      <StartChars />
+      <EndChars />
+      <AckChars />
+      <SocketSndBufferSize>0</SocketSndBufferSize>
+      <SocketRcvBufferSize>0</SocketRcvBufferSize>
+      <UseSocketSndBufferSize>false</UseSocketSndBufferSize>
+      <UseSocketRcvBufferSize>false</UseSocketRcvBufferSize>
+      <RcvBufferSize>8192</RcvBufferSize>
+    </HostDriver>
+    <ReceiveMessages />
+    <SendMessages />
+    <CustomReceiveMessages />
+    <NextSendMessageID>0</NextSendMessageID>
+    <Priority>0</Priority>
+  </HostPort>
+  <TransportManager>
+    <ID xsi:type="xsd:string">TransportManager</ID>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <LogMessages />
+    <LastMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastMessage>
+    <LastErrorMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastErrorMessage>
+    <LastErrorMessageDate>
+      0001-01-01T00:00:00.0000000+01:00
+    </LastErrorMessageDate>
+    <LastRunDuration>0</LastRunDuration>
+    <Parameters>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Timebase</ID>
+        <ContextID xsi:type="xsd:string">TransportManager</ContextID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>60000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>Timebase in mSec</Description>
+      </anyType>
+    </Parameters>
+  </TransportManager>
+  <Transports />
+  <TransportSequencer>
+    <ID xsi:type="xsd:string">TransportSequencer</ID>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <LogMessages />
+    <LastMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastMessage>
+    <LastErrorMessage>
+      <TextDef>
+        <Arguments />
+      </TextDef>
+    </LastErrorMessage>
+    <LastErrorMessageDate>
+      0001-01-01T00:00:00.0000000+01:00
+    </LastErrorMessageDate>
+    <LastRunDuration>0</LastRunDuration>
+    <Parameters>
+      <anyType xsi:type="Parameter">
+        <ID xsi:type="xsd:string">Timebase</ID>
+        <ContextID xsi:type="xsd:string">TransportSequencer</ContextID>
+        <Type>INT</Type>
+        <MinValue>10</MinValue>
+        <MaxValue>60000</MaxValue>
+        <DefaultValue>100</DefaultValue>
+        <Description>Timebase in mSec</Description>
+      </anyType>
+    </Parameters>
+  </TransportSequencer>
+  <TransportSequences>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ01</ID>
+      <LoadID>LOAD_001</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-01-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-01-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-01-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-01-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-01-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ02</ID>
+      <LoadID>LOAD_002</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-02-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-02-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-02-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-02-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-02-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ03</ID>
+      <LoadID>LOAD_003</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-03-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-03-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-03-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-03-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-03-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ04</ID>
+      <LoadID>LOAD_004</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-04-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-04-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-04-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-04-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-04-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ05</ID>
+      <LoadID>LOAD_005</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-05-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-05-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-05-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-05-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-05-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ06</ID>
+      <LoadID>LOAD_006</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-06-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-06-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-06-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-06-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-06-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ07</ID>
+      <LoadID>LOAD_007</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-07-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-07-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-07-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-07-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-07-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+    <anyType xsi:type="TransportSequence">
+      <ID xsi:type="xsd:string">SEQ08</ID>
+      <LoadID>LOAD_008</LoadID>
+      <StepID />
+      <Steps>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">001_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-01-08-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">002_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-08-08-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">003_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>2</SecondsToWaitAfterStep>
+          <SourceID>0251-08-08-03-01</SourceID>
+          <DestinationID>0250-02-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">004_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>3</SecondsToWaitAfterStep>
+          <SourceID>0250-03-01</SourceID>
+          <DestinationID>0251-01-08-03-01</DestinationID>
+        </anyType>
+        <anyType xsi:type="TransportSequenceStepMOVE">
+          <ID xsi:type="xsd:string">005_MOVE</ID>
+          <ExecutingCount>0</ExecutingCount>
+          <SecondsToWaitAfterStep>1</SecondsToWaitAfterStep>
+          <SourceID>0251-02-08-03-01</SourceID>
+          <DestinationID>0030-03-01</DestinationID>
+        </anyType>
+      </Steps>
+      <WaitTransitionReason_Step>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_Step>
+      <WaitTransitionReason_StepState>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </WaitTransitionReason_StepState>
+    </anyType>
+  </TransportSequences>
+  <Movers>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV1</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV1</ID>
+        <ContextID xsi:type="xsd:string">AGV1</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV1</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36001</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV10</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV10</ID>
+        <ContextID xsi:type="xsd:string">AGV10</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV10</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36002</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV11</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV11</ID>
+        <ContextID xsi:type="xsd:string">AGV11</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV11</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36003</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV12</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV12</ID>
+        <ContextID xsi:type="xsd:string">AGV12</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV12</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36004</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV2</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV2</ID>
+        <ContextID xsi:type="xsd:string">AGV2</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV2</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36005</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV3</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV3</ID>
+        <ContextID xsi:type="xsd:string">AGV3</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV3</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36006</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV4</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV4</ID>
+        <ContextID xsi:type="xsd:string">AGV4</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV4</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36007</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV5</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV5</ID>
+        <ContextID xsi:type="xsd:string">AGV5</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV5</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36008</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV6</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV6</ID>
+        <ContextID xsi:type="xsd:string">AGV6</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV6</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36009</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV7</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV7</ID>
+        <ContextID xsi:type="xsd:string">AGV7</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV7</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36010</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV8</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV8</ID>
+        <ContextID xsi:type="xsd:string">AGV8</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV8</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36011</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+    <anyType xsi:type="Mover">
+      <ID xsi:type="xsd:string">AGV9</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <ID xsi:type="xsd:string">AGV9</ID>
+        <ContextID xsi:type="xsd:string">AGV9</ContextID>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <ContextID xsi:type="xsd:string">AGV9</ContextID>
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+          <LocalPort>36012</LocalPort>
+        </HostDriver2TcpIp>
+      </Protocol>
+      <TypeID xsi:type="xsd:string">FLV</TypeID>
+    </anyType>
+  </Movers>
+  <MoverTypes>
+    <anyType xsi:type="MoverType">
+      <ID xsi:type="xsd:string">FLV</ID>
+      <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+      <LogMessages />
+      <LastMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastMessage>
+      <LastErrorMessage>
+        <TextDef>
+          <Arguments />
+        </TextDef>
+      </LastErrorMessage>
+      <LastErrorMessageDate>
+        0001-01-01T00:00:00.0000000+01:00
+      </LastErrorMessageDate>
+      <Protocol>
+        <LogMessages />
+        <LastMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastMessage>
+        <LastErrorMessage>
+          <TextDef>
+            <Arguments />
+          </TextDef>
+        </LastErrorMessage>
+        <LastErrorMessageDate>
+          0001-01-01T00:00:00.0000000+01:00
+        </LastErrorMessageDate>
+        <HostDriver2TcpIp xsi:type="HostDriver2TcpIpServer">
+          <LogMessages />
+          <LastMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastMessage>
+          <LastErrorMessage>
+            <TextDef>
+              <Arguments />
+            </TextDef>
+          </LastErrorMessage>
+          <LastErrorMessageDate>
+            0001-01-01T00:00:00.0000000+01:00
+          </LastErrorMessageDate>
+          <MessageStartUnicodeBytes />
+          <MessageEndUnicodeBytes>DQA=</MessageEndUnicodeBytes>
+        </HostDriver2TcpIp>
+      </Protocol>
+    </anyType>
+  </MoverTypes>
+  <License>
+    <ContextID xsi:type="xsd:string">EuroBaltic - EPMS</ContextID>
+    <KeyType>UNDEFINED</KeyType>
+    <KeyLocation>UNDEFINED</KeyLocation>
+    <Signature />
+    <AllowedVersionIDs>*</AllowedVersionIDs>
+  </License>
+</Project>

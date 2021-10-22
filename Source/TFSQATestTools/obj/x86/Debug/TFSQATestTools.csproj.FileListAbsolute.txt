@@ -1,0 +1,13 @@
+C:\AutomaticTests514\bin\Debug\TFSQATestTools.exe.config
+C:\AutomaticTests514\bin\Debug\TFSQATestTools.exe
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.csprojAssemblyReference.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.Configuration.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.HostTestForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.ToolsForm.resources
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.csproj.GenerateResource.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.csproj.CopyComplete
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.exe
+C:\AutomaticTests514\Source\TFSQATestTools\obj\x86\Debug\TFSQATestTools.pdb

@@ -1,0 +1,14 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Setups\AutomaticTesting\bin\Debug\AutomaticTesting.msi
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Setups\AutomaticTesting\bin\Debug\AutomaticTesting.wixpdb
+obj\\Debug\Product.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_QATestEpiaProtected.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_QATestEpiaUI.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_QATestEtriccStatistics.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_QATestEtriccUI.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_TestRuns.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_TestTools.wixobj
+obj\\Debug\pth590388FFA067AF5287CF44534E849CA7\_TFSQATestTools.wixobj
+obj\\Debug\AutomaticTesting.wixproj.BindContentsFileListnull.txt
+obj\\Debug\AutomaticTesting.wixproj.BindOutputsFileListnull.txt
+obj\\Debug\AutomaticTesting.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Installation\Setup\AutomaticTesting.msi

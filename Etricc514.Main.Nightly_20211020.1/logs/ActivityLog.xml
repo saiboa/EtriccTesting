@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="ActivityLog.xsl"?>
+<BuildInformation>
+  <BuildInformationNode Id="6fd48792-a106-4567-882b-0ca8db89b208" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="1" />
+    <InformationField Name="ActivityType" Value="DynamicActivity" />
+    <InformationField Name="DisplayName" Value="Overall Build Process" />
+    <InformationField Name="Duration" Value="00:19:52" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9364311Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:49:55.2895025Z" />
+  </Fields>
+<Children><BuildInformationNode Id="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" ParentId="6fd48792-a106-4567-882b-0ca8db89b208" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="2" />
+    <InformationField Name="ActivityType" Value="Sequence" />
+    <InformationField Name="DisplayName" Value="Main Sequence" />
+    <InformationField Name="Duration" Value="00:19:52" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9364311Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:49:55.2895025Z" />
+  </Fields>
+<Children><BuildInformationNode Id="de0badc5-8f12-4dd5-8bab-7357dd4ea022" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="3" />
+    <InformationField Name="ActivityType" Value="GetBuildDetail" />
+    <InformationField Name="DisplayName" Value="Get the Build" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9364311Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9364311Z" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="64c82d5f-87bd-4d3b-93e5-1820b99fd974" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="4" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If Create Release Branch" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9364311Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9364311Z" />
+  </Fields>
+<Children><BuildInformationNode Id="65d6f3c4-c60f-48d8-8ceb-ba023f623fcc" ParentId="64c82d5f-87bd-4d3b-93e5-1820b99fd974" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="32890876-e222-45ae-9acc-1ab39da583e9" ParentId="64c82d5f-87bd-4d3b-93e5-1820b99fd974" Type="BuildMessage">
+  <Fields>
+    <InformationField Name="Importance" Value="Normal" />
+    <InformationField Name="Message" Value="Create branch is not selected for this Version Build" />
+    <InformationField Name="Timestamp" Value="2021-10-20T20:30:02.9364311Z" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="c241dd93-b648-485b-97e9-cb15bb1d25f8" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="7" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If Create Version Then set buildnumber to 'Release ...' or 'Hotfix ...'" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9364311Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9520778Z" />
+  </Fields>
+<Children><BuildInformationNode Id="c45b026f-a778-46dc-94dc-10e8af07ae14" ParentId="c241dd93-b648-485b-97e9-cb15bb1d25f8" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="2996f4f6-afb6-417a-a015-9391f3620046" ParentId="c241dd93-b648-485b-97e9-cb15bb1d25f8" Type="BuildMessage">
+  <Fields>
+    <InformationField Name="Importance" Value="Normal" />
+    <InformationField Name="Message" Value="This is not a Version Build" />
+    <InformationField Name="Timestamp" Value="2021-10-20T20:30:02.9364311Z" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="cee867c8-d06d-498a-869b-ea55f046d18d" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="10" />
+    <InformationField Name="ActivityType" Value="Sequence" />
+    <InformationField Name="DisplayName" Value="Update Drop Location" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9520778Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="a1bf3077-3a12-4240-97e0-dea063a243d7" ParentId="cee867c8-d06d-498a-869b-ea55f046d18d" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="11" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If not Create Version" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9520778Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9676806Z" />
+  </Fields>
+<Children><BuildInformationNode Id="f9c4ab78-5959-4e77-8de4-5024dfa10508" ParentId="a1bf3077-3a12-4240-97e0-dea063a243d7" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="18" />
+    <InformationField Name="ActivityType" Value="UpdateBuildNumber" />
+    <InformationField Name="DisplayName" Value="Update Build Number" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9520778Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9676806Z" />
+  </Fields>
+<Children><BuildInformationNode Id="a3ea5207-dde5-4c02-aa93-c48d521d8a3b" ParentId="f9c4ab78-5959-4e77-8de4-5024dfa10508" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="BuildNumberFormat" Value="$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="fda4fb0b-c5cb-48c4-809e-5f31a24cae45" ParentId="f9c4ab78-5959-4e77-8de4-5024dfa10508" Type="ActivityOutput">
+  <Fields>
+    <InformationField Name="Result" Value="Etricc514.Main.Nightly_20211020.1" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="85cb3e71-6f85-4b4d-9620-8322c11f5eb9" ParentId="a1bf3077-3a12-4240-97e0-dea063a243d7" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="62e6cac3-54b2-4aab-b684-512ff4f1203e" ParentId="cee867c8-d06d-498a-869b-ea55f046d18d" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="19" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If DropBuild And Build Reason is Triggered" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="78b77ea6-786c-4970-830d-d70732e7ba28" ParentId="62e6cac3-54b2-4aab-b684-512ff4f1203e" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="20" />
+    <InformationField Name="ActivityType" Value="Sequence" />
+    <InformationField Name="DisplayName" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="75cc0b4c-578f-4513-8cde-c822f2710a9a" ParentId="78b77ea6-786c-4970-830d-d70732e7ba28" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="21" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="Create Dropfolder anyway if Copy Installation or VSIX Files to dropfolder" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="dbc6c9cf-144a-4f39-b5c0-5c4bdee6dd46" ParentId="75cc0b4c-578f-4513-8cde-c822f2710a9a" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="22" />
+    <InformationField Name="ActivityType" Value="Sequence" />
+    <InformationField Name="DisplayName" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="f40f751e-d70c-4c85-ab1d-b38835ee345f" ParentId="dbc6c9cf-144a-4f39-b5c0-5c4bdee6dd46" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="23" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If DropLocationRoot is empty" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9676806Z" />
+  </Fields>
+<Children><BuildInformationNode Id="6ee3ffd9-77d5-4f1f-b009-80689f816bfc" ParentId="f40f751e-d70c-4c85-ab1d-b38835ee345f" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="da061cad-2eff-44e8-94f0-4aacd2ee2b8d" ParentId="dbc6c9cf-144a-4f39-b5c0-5c4bdee6dd46" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="24" />
+    <InformationField Name="ActivityType" Value="SetBuildProperties" />
+    <InformationField Name="DisplayName" Value="Set Drop Location" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9676806Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="063c5166-e9ca-4f95-a33a-8532a74a9112" ParentId="da061cad-2eff-44e8-94f0-4aacd2ee2b8d" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="LabelName" />
+    <InformationField Name="SourceGetVersion" />
+    <InformationField Name="KeepForever" Value="False" />
+    <InformationField Name="DropLocation" Value="\\filecluster2.emea.tld\TFSDropFolder\Builds\Nightly\Etricc 5\Etricc514.Main.Nightly\Etricc514.Main.Nightly_20211020.1" />
+    <InformationField Name="Status" Value="None" />
+    <InformationField Name="LogLocation" />
+    <InformationField Name="BuildNumber" />
+    <InformationField Name="Quality" />
+    <InformationField Name="TestStatus" Value="Unknown" />
+    <InformationField Name="CompilationStatus" Value="Unknown" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="ceb122f8-7e43-4742-82bf-b1a1f0866b78" ParentId="dbc6c9cf-144a-4f39-b5c0-5c4bdee6dd46" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="27" />
+    <InformationField Name="ActivityType" Value="CreateDirectory" />
+    <InformationField Name="DisplayName" Value="Create the Drop Location" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9833142Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="fbb6f638-ca23-4438-9f3a-71670a4277ca" ParentId="ceb122f8-7e43-4742-82bf-b1a1f0866b78" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Directory" Value="\\filecluster2.emea.tld\TFSDropFolder\Builds\Nightly\Etricc 5\Etricc514.Main.Nightly\Etricc514.Main.Nightly_20211020.1" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="feecad17-00d4-4161-b44d-0501e6c3db99" ParentId="dbc6c9cf-144a-4f39-b5c0-5c4bdee6dd46" Type="BuildMessage">
+  <Fields>
+    <InformationField Name="Importance" Value="Normal" />
+    <InformationField Name="Message" Value="  Drop Location: \\filecluster2.emea.tld\TFSDropFolder\Builds\Nightly\Etricc 5\Etricc514.Main.Nightly\Etricc514.Main.Nightly_20211020.1" />
+    <InformationField Name="Timestamp" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="c75f2333-b251-4c29-8d7a-14cb733d52c6" ParentId="75cc0b4c-578f-4513-8cde-c822f2710a9a" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="True" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="6fc7348f-3ec4-470f-bb74-d16ca0588185" ParentId="62e6cac3-54b2-4aab-b684-512ff4f1203e" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="56b10cc4-01ad-4a6f-9eaf-8fc62bf8a09d" ParentId="cee867c8-d06d-498a-869b-ea55f046d18d" Type="ActivityTracking">
+  <Fields>
+    <InformationField Name="ActivityInstanceId" Value="28" />
+    <InformationField Name="ActivityType" Value="If" />
+    <InformationField Name="DisplayName" Value="If DropBuild And Build Reason is ValidateShelveset" />
+    <InformationField Name="Duration" Value="00:00:00" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9833142Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:30:02.9833142Z" />
+  </Fields>
+<Children><BuildInformationNode Id="43cb46f6-7352-4dfa-8c94-def21cc859a5" ParentId="56b10cc4-01ad-4a6f-9eaf-8fc62bf8a09d" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="Condition" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="bb19936f-0006-498b-b560-e08ea1563db7" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="AgentScopeActivityTracking">
+  <Fields>
+    <InformationField Name="ReservationStatus" Value="AgentReleased" />
+    <InformationField Name="ReservedAgentUri" Value="vstfs:///Build/Agent/94" />
+    <InformationField Name="ReservedAgentName" Value="TeamLab 2019 - Agent 1.3" />
+    <InformationField Name="ActivityInstanceId" Value="29" />
+    <InformationField Name="ActivityType" Value="AgentScope" />
+    <InformationField Name="DisplayName" Value="Run On Agent" />
+    <InformationField Name="Duration" Value="00:19:52" />
+    <InformationField Name="State" Value="Closed" />
+    <InformationField Name="StartTime" Value="2021-10-20T20:30:02.9833142Z" />
+    <InformationField Name="FinishTime" Value="2021-10-20T20:49:55.2738718Z" />
+    <InformationField Name="PossibleAgents" Value="vstfs:///Build/Agent/94=TeamLab 2019 - Agent 1.3|vstfs:///Build/Agent/95=TeamLab 2019 - Agent 1.4|vstfs:///Build/Agent/101=Azure Agent 2019 - 1.2" />
+  </Fields>
+<Children><BuildInformationNode Id="fa2e6283-7ab3-4aa8-b204-9976015b3b86" ParentId="bb19936f-0006-498b-b560-e08ea1563db7" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="MaxWaitTime" Value="10.00:00:00" />
+    <InformationField Name="MaxExecutionTime" Value="02:00:00" />
+    <InformationField Name="ReservationSpec" Value="Name=*, Tags=OS x64,Priority - Low,Visual Studio 2019 C#,Visual Studio 2019 SDK,WiX Toolset v3.14" />
+  </Fields>
+<Children /></BuildInformationNode><BuildInformationNode Id="d6a18de1-635f-43d8-8832-8a44fcab300b" ParentId="bb19936f-0006-498b-b560-e08ea1563db7" Type="ActivityOutput">
+  <Fields>
+    <InformationField Name="Result" Value="TeamLab 2019 - Agent 1.3 (vstfs:///Build/Agent/94)" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="123e0973-20ad-4e88-84ca-5672cc81c356" ParentId="e5cdd68e-9551-4b9e-8113-d8aed4fa378c" Type="BuildMessage">
+  <Fields>
+    <InformationField Name="Importance" Value="Normal" />
+    <InformationField Name="Message" Value="Skipped execution of Check In Gated Changes because of BuildReason ScheduleForced" />
+    <InformationField Name="Timestamp" Value="2021-10-20T20:49:55.2895025Z" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode><BuildInformationNode Id="2f84ebbe-d27f-4c03-9b05-6b29f99d47e7" ParentId="6fd48792-a106-4567-882b-0ca8db89b208" Type="ActivityInput">
+  <Fields>
+    <InformationField Name="AssemblyFileVersionBuild" Value="-1" />
+    <InformationField Name="BranchSourceFolder" />
+    <InformationField Name="CopyInstallationFilesToDropFolder" Value="True" />
+    <InformationField Name="CopyVSIXFilesToDropFolder" Value="False" />
+    <InformationField Name="ReleaseVehicleType" />
+    <InformationField Name="TeamProjectName" />
+    <InformationField Name="Verbosity" Value="Normal" />
+    <InformationField Name="CopyNuGetPackagesToDropFolder" Value="False" />
+    <InformationField Name="UseManualAssemblyFileVersioning" Value="False" />
+    <InformationField Name="CreateWorkItem" Value="False" />
+    <InformationField Name="SourceAndSymbolServerSettings" />
+    <InformationField Name="CheckInVersionedFiles" Value="False" />
+    <InformationField Name="UpdateAssemblyInfoFiles_SourcesAndReferencesChanged" Value="False" />
+    <InformationField Name="RunCodeAnalysis" Value="AsConfigured" />
+    <InformationField Name="SetAssemblyVersion" Value="True" />
+    <InformationField Name="AssemblyFileVersionRevision" Value="-1" />
+    <InformationField Name="CreateHotfixBranch" Value="False" />
+    <InformationField Name="ResetVersionInfoToDevelopment" Value="True" />
+    <InformationField Name="TestSpecs" Value="Run tests in assemblies matching **\*test*.dll" />
+    <InformationField Name="AssemblyFileVersionMinor" Value="-1" />
+    <InformationField Name="BranchTargetFolder" />
+    <InformationField Name="AgentSettings" Value="Use agent where Name=* and Tags contain OS x64,Priority - Low,Visual Studio 2019 C#,Visual Studio 2019 SDK,WiX Toolset v3.14; Max Execution Time: 02:00:00; Max Wait Time: 10.00:00:00" />
+    <InformationField Name="MSBuildPlatform" Value="Auto" />
+    <InformationField Name="DropBuild" Value="False" />
+    <InformationField Name="PrivateDropLocation" />
+    <InformationField Name="CleanAgentFolder" Value="True" />
+    <InformationField Name="MSBuildArguments" Value="/t:Restore" />
+    <InformationField Name="CreateLabel" Value="True" />
+    <InformationField Name="AssociateChangesetsAndWorkItems" Value="True" />
+    <InformationField Name="TradeMarks" Value="E'tricc®" />
+    <InformationField Name="CreateVersion" Value="False" />
+    <InformationField Name="AssemblyFileVersionMajor" Value="-1" />
+    <InformationField Name="CreateServicePackBranch" Value="False" />
+    <InformationField Name="CreateReleaseBranch" Value="False" />
+    <InformationField Name="GetVersion" />
+    <InformationField Name="CleanWorkspace" Value="All" />
+    <InformationField Name="UpdateAsemblyInfoFiles_All" Value="False" />
+    <InformationField Name="UpdateAssemblyInfoFiles_SourcesChanged" Value="False" />
+    <InformationField Name="SetupProjectType" Value="WIX" />
+    <InformationField Name="CreateInstallationFiles" Value="True" />
+    <InformationField Name="PerformTestImpactAnalysis" Value="True" />
+    <InformationField Name="BuildSettings" Value="Build 1 project(s) for 3 platform(s) and configuration(s)" />
+    <InformationField Name="InstalledSoftwareListScript" />
+    <InformationField Name="UpdateDefinitionFile" Value="False" />
+    <InformationField Name="VisualStudioVersion" Value="2019" />
+    <InformationField Name="BuildNumberFormat" Value="$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)" />
+    <InformationField Name="DisableTests" Value="False" />
+  </Fields>
+<Children /></BuildInformationNode></Children></BuildInformationNode>
+</BuildInformation>

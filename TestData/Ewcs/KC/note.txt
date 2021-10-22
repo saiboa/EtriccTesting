@@ -1,0 +1,17 @@
+Configuration EWCS Server 
+
+1 On EWCS Server  run Ewcs DropALLTables Script.sql
+2 On Test Server  on database --> EWcs --> Tasks --> Generate Scripts --> Scriopts.sql
+3 On EWCS Server  run Script.sql
+4 connectionString="Data Source=KC-WCS-SQL;Initial Catalog=Ewcs;Integrated Security=True; User Id=sa; Password=Egemin01"
+5. replace connectionstring --> DatabaseFiller
+6 replace connectionstring --> Egemin.Ewcs.Server.exe.config
+
+
+Client side
+7 replace localhost by  KC-WCS and KC-ETRICC
+
+
+
+Remove Ewcs database
+1. run DropDatabase.bat with DropDatabase.sql

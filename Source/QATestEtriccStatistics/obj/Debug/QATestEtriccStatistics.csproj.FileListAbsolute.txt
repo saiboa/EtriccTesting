@@ -1,0 +1,25 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\QATestEtriccStatistics.bat
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csprojResolveAssemblyReference.cache
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+C:\AutomaticTestsVS2015\bin\Debug\QATestEtriccStatistics.bat
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe.config
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+C:\AutomaticTestsVS2015\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\AutomaticTestsVS2015\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+C:\AutomaticTestsVS2015\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CoreCompileInputs.cache
+C:\AutomaticTestsVS2015\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CopyComplete
+C:\AutomaticTestsVS2015\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csprojAssemblyReference.cache
+C:\AutomaticTests514\bin\Debug\QATestEtriccStatistics.bat
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe.config
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csprojAssemblyReference.cache
+C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CopyComplete
+C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb

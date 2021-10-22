@@ -1,0 +1,10 @@
+Save Excel file1 exception: System.Runtime.InteropServices.COMException (0x800A03EC): Unable to get the SaveAs property of the Workbook class
+   at System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   at CallSite.Target(Closure , CallSite , ComObject , String , XlFileFormat , Object , Object , Object , Object , XlSaveAsAccessMode , Object , Object , Object , Object , Object )
+   at CallSite.Target(Closure , CallSite , ComObject , String , XlFileFormat , Object , Object , Object , Object , XlSaveAsAccessMode , Object , Object , Object , Object , Object )
+   at CallSite.Target(Closure , CallSite , Object , String , XlFileFormat , Object , Object , Object , Object , XlSaveAsAccessMode , Object , Object , Object , Object , Object )
+   at TestTools.FileManipulation.SaveExcel(Application xApp, String sXLSPath, String& errorMsg) in C:\AutomaticTestsVS2015\Source\TestTools\FileManipulation.cs:line 554
+Save Excel file1 exception: System.Runtime.InteropServices.COMException (0x800A03EC): Unable to get the SaveAs property of the Workbook class
+   at System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   at CallSite.Target(Closure , CallSite , ComObject , String , XlFileFormat , Object , Object , Object , Object , XlSaveAsAccessMode , Object , Object , Object , Object , Object )
+   at TestTools.FileManipulation.SaveExcel(Application xApp, String sXLSPath, String& errorMsg) in C:\AutomaticTestsVS2015\Source\TestTools\FileManipulation.cs:line 554

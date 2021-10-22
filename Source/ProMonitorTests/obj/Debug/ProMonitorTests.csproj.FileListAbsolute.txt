@@ -1,0 +1,15 @@
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.exe.config
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.exe
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.pdb
+C:\AutomaticTestsVS2015\Source\ProMonitorTests\obj\Debug\Egemin.Epia.Testing.ProMonitorTests.exe
+C:\AutomaticTestsVS2015\Source\ProMonitorTests\obj\Debug\Egemin.Epia.Testing.ProMonitorTests.pdb
+C:\AutomaticTestsVS2015\Source\ProMonitorTests\obj\Debug\ProMonitorTests.csproj.CoreCompileInputs.cache
+C:\AutomaticTestsVS2015\Source\ProMonitorTests\obj\Debug\ProMonitorTests.csproj.CopyComplete
+C:\AutomaticTestsVS2015\Source\ProMonitorTests\obj\Debug\ProMonitorTests.csprojAssemblyReference.cache
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.exe.config
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.exe
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.ProMonitorTests.pdb
+C:\AutomaticTests514\Source\ProMonitorTests\obj\Debug\ProMonitorTests.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\ProMonitorTests\obj\Debug\ProMonitorTests.csproj.CopyComplete
+C:\AutomaticTests514\Source\ProMonitorTests\obj\Debug\Egemin.Epia.Testing.ProMonitorTests.exe
+C:\AutomaticTests514\Source\ProMonitorTests\obj\Debug\Egemin.Epia.Testing.ProMonitorTests.pdb

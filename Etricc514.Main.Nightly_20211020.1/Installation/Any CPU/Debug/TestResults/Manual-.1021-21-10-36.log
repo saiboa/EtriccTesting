@@ -1,0 +1,222 @@
+10/21/2021 9:10:36 PM	Test Results for Test Run; 
+10/21/2021 9:10:36 PM	============================
+10/21/2021 9:10:36 PM: 	0) Install msi file path: C:\AutomaticTests514\Etricc514.Main.Nightly_20211020.1\Installation\Any CPU\Debug.
+10/21/2021 9:10:36 PM: 	1) BuildBaseDir: C:\AutomaticTests514\Etricc514.Main.Nightly_20211020.1\Installation\Any CPU\Debug.
+10/21/2021 9:10:36 PM: 	2) build nr: C:\AutomaticTests514\Etricc514.Main.Nightly_20211020.1\Installation\Any CPU\Debug.
+10/21/2021 9:10:36 PM: 	3) test Project: Epia 4.
+10/21/2021 9:10:36 PM: 	4) test Application: Epia4.
+10/21/2021 9:10:36 PM: 	5) targeted platform: .
+10/21/2021 9:10:36 PM: 	6) current platform: .
+10/21/2021 9:10:36 PM: 	7) test def: .
+10/21/2021 9:10:36 PM: 	8) Called by: TFSQATesttTool.
+10/21/2021 9:10:36 PM: 	9) TestTool version: 4.14.7.29.
+10/21/2021 9:10:36 PM: 	10) Auto test: False.
+10/21/2021 9:10:36 PM: 	11) TFSServerUrl: http://team2010App.teamSystems.egemin.be:8080/tfs/Development.
+10/21/2021 9:10:36 PM: 	12) Server Run As: Service.
+10/21/2021 9:10:36 PM: 	13) Excel Visible: Visible.
+10/21/2021 9:10:36 PM: 	14) Demo test: False.
+10/21/2021 9:10:36 PM: 	15) Mail: false.
+10/21/2021 9:10:36 PM: 	16) TestDefinitionFile: .
+10/21/2021 9:10:36 PM: 	17) InfoFileKey: .
+10/21/2021 9:10:36 PM: 	18) NetworkMap: .
+10/21/2021 9:10:36 PM: 	19) DemoCaseCount: 4.
+10/21/2021 9:10:36 PM: 	m_SystemDrive: C:\.
+10/21/2021 9:15:30 PM: 	Test started: .
+10/21/2021 9:15:33 PM: 	sHeaderContents.length: 10.
+
+10/21/2021 9:15:35 PM: (0) ==========EpiaServerInstallerIntegrityCheck.
+10/21/2021 9:15:35 PM: 	Too much files installed : extra installed dll --> ; Egemin.Epia.Foundation.SqlRptServices.Interfaces.dll; Epia.T4Toolbox.dll; Microsoft.ReportViewer.WinForms.dll; Egemin.Epia.Components.pdb; Egemin.Epia.Foundation.Alarming.Interfaces.pdb; Egemin.Epia.Foundation.Communication.Interfaces.pdb; Egemin.Epia.Foundation.Communication.pdb; Egemin.Epia.Foundation.ComponentManagement.Configuration.pdb; Egemin.Epia.Foundation.ComponentManagement.Development.pdb; Egemin.Epia.Foundation.Globalization.Interfaces.pdb; Egemin.Epia.Foundation.License.Interfaces.pdb; Egemin.Epia.Foundation.pdb; Egemin.Epia.Foundation.Security.Interfaces.pdb; Egemin.Epia.Foundation.SqlRptServices.Interfaces.pdb; Egemin.Epia.Foundation.VersionInformation.Interfaces.pdb; Egemin.Epia.Presentation.Configuration.Interfaces.pdb; Egemin.Epia.Server.pdb: Test Failed:.
+
+10/21/2021 9:15:41 PM: (1) ==========EpiaShellInstallerIntegrityCheck.
+10/21/2021 9:15:41 PM: 	installedShellDllCnt > standardShellDllCnt:; Egemin.Epia.Foundation.SqlRptServices.Interfaces.dll; Egemin.Epia.Presentation.FileDlgExtenders.dll; Microsoft.VisualStudio.Shell.Design.dll; Microsoft.VisualStudio.Shell.Immutable.10.0.dll; Egemin.Epia.Foundation.SqlRptServices.Interfaces.pdb; Egemin.Epia.Presentation.FileDlgExtenders.pdb.
+10/21/2021 9:15:41 PM: 	EpiaShellInstallerIntegrityCheck: Test Passed:.
+
+10/21/2021 9:15:54 PM: (2) ==========ShellCloseWithinMinuteAfterServerDown.
+
+10/21/2021 9:15:54 PM: (2) ==========StartEpiaServerShell.
+10/21/2021 9:16:18 PM: 	open window name: SplashScreen.
+10/21/2021 9:16:21 PM: 	open window name: Epia Shell.
+10/21/2021 9:16:32 PM: 	StartEpiaServerShell: Test Passed:.
+10/21/2021 9:19:19 PM: 	Shell is still open after one minute: Test Failed:.
+
+10/21/2021 9:19:21 PM: (3) ==========StartEpiaServerShell.
+10/21/2021 9:19:44 PM: 	open window name: SplashScreen.
+10/21/2021 9:19:48 PM: 	open window name: Epia Shell.
+10/21/2021 9:19:59 PM: 	StartEpiaServerShell: Test Passed:.
+
+10/21/2021 9:20:38 PM: (4) ==========ResourceIDIntegrityCheck.
+10/21/2021 9:20:38 PM: 	ResourceIDIntegrityCheck: Test Passed:.
+
+10/21/2021 9:20:41 PM: (5) ==========LayoutFindLayoutPanel.
+10/21/2021 9:21:01 PM: 	time is:6.0024375.
+10/21/2021 9:21:01 PM: 	LayoutFindLayoutPanel: Test Passed:.
+
+10/21/2021 9:21:05 PM: (6) ==========LayoutInitialXPosition.
+10/21/2021 9:21:49 PM: 	LayoutInitialXPosition: Test Passed:.
+
+10/21/2021 9:21:52 PM: (7) ==========LayoutInitialYPosition.
+10/21/2021 9:22:21 PM: 	time is:14.004976.
+10/21/2021 9:22:21 PM: 	LayoutInitialYPosition: Test Passed:.
+
+10/21/2021 9:22:24 PM: (8) ==========LayoutInitialWidth.
+10/21/2021 9:22:53 PM: 	time is:14.0038917.
+10/21/2021 9:22:53 PM: 	LayoutInitialWidth: Test Passed:.
+
+10/21/2021 9:22:56 PM: (9) ==========LayoutInitialHeight.
+10/21/2021 9:23:24 PM: 	time is:14.0052161.
+10/21/2021 9:23:24 PM: 	Get Current Height:505.
+10/21/2021 9:23:24 PM: 	LayoutInitialHeight: Test Passed:.
+
+10/21/2021 9:23:27 PM: (10) ==========LayoutAllowResize.
+10/21/2021 9:23:56 PM: 	time is:14.0039355.
+10/21/2021 9:24:02 PM: 	LayoutAllowResize: Test Passed:.
+
+10/21/2021 9:24:05 PM: (11) ==========LayoutFullScreen.
+10/21/2021 9:24:22 PM: 	FindElementAndToggle failed:fullScreenCheckBox: Test Failed:.
+10/21/2021 9:24:36 PM: 	time is:16.0051823.
+10/21/2021 9:24:36 PM: 	Left=0.
+10/21/2021 9:24:36 PM: 	right=1920.
+10/21/2021 9:24:36 PM: 	top=0.
+10/21/2021 9:24:36 PM: 	bottom=1080.
+10/21/2021 9:24:36 PM: 	LayoutFullScreen: Test Passed:.
+
+10/21/2021 9:24:39 PM: (11) ==========ReturnDefaultLayout.
+10/21/2021 9:25:25 PM: 	time is:32.0104519.
+10/21/2021 9:25:25 PM: 	Left=10.
+10/21/2021 9:25:25 PM: 	right=818.
+10/21/2021 9:25:25 PM: 	top=10.
+10/21/2021 9:25:25 PM: 	bottom=655.
+10/21/2021 9:25:25 PM: 	top=10--- Left=10.
+
+10/21/2021 9:25:31 PM: (12) ==========LayoutMaximized.
+10/21/2021 9:26:06 PM: 	time is:20.0056398.
+10/21/2021 9:26:06 PM: 	Left=-8.
+10/21/2021 9:26:06 PM: 	right=1928.
+10/21/2021 9:26:06 PM: 	top=-8.
+10/21/2021 9:26:06 PM: 	bottom=1048.
+10/21/2021 9:26:07 PM: 	LayoutMaximized: Test Passed:.
+
+10/21/2021 9:26:10 PM: (12) ==========ReturnDefaultLayout.
+10/21/2021 9:26:57 PM: 	time is:32.0099405.
+10/21/2021 9:26:57 PM: 	Left=0.
+10/21/2021 9:26:57 PM: 	right=808.
+10/21/2021 9:26:57 PM: 	top=0.
+10/21/2021 9:26:57 PM: 	bottom=645.
+10/21/2021 9:26:57 PM: 	top=0--- Left=0.
+
+10/21/2021 9:27:03 PM: (13) ==========LayoutRibbonOn.
+
+10/21/2021 9:27:03 PM: (14) ==========LayoutCancelButton.
+
+10/21/2021 9:27:03 PM: (14) ==========ReturnDefaultLayout.
+10/21/2021 9:27:49 PM: 	time is:32.0093914.
+10/21/2021 9:27:49 PM: 	Left=0.
+10/21/2021 9:27:49 PM: 	right=808.
+10/21/2021 9:27:49 PM: 	top=0.
+10/21/2021 9:27:49 PM: 	bottom=645.
+10/21/2021 9:27:49 PM: 	top=0--- Left=0.
+10/21/2021 9:28:37 PM: 	time is:30.0089774.
+
+10/21/2021 9:28:40 PM: (14) ==========ValidateDefaultLayout.
+10/21/2021 9:29:09 PM: 	time is:14.0028068.
+10/21/2021 9:29:09 PM: 	Left=0.
+10/21/2021 9:29:09 PM: 	right=808.
+10/21/2021 9:29:09 PM: 	top=0.
+10/21/2021 9:29:09 PM: 	bottom=645.
+10/21/2021 9:29:09 PM: 	top=0--- Left=0.
+10/21/2021 9:29:12 PM: 	LayoutCancelButton: Test Passed:.
+
+10/21/2021 9:29:15 PM: (15) ==========OpenAccountDetailScreen.
+10/21/2021 9:30:04 PM: 	OpenAccountDetailScreen: Test Passed:.
+
+10/21/2021 9:30:07 PM: (16) ==========AddNewRole.
+10/21/2021 9:32:17 PM: 	AddNewRole: Test Passed:.
+
+10/21/2021 9:32:21 PM: (17) ==========OpenRoleDetailScreen.
+10/21/2021 9:33:20 PM: 	OpenRoleDetailScreen: Test Passed:.
+
+10/21/2021 9:33:24 PM: (18) ==========EditRole.
+10/21/2021 9:35:03 PM: 	EditRole: Test Passed:.
+
+10/21/2021 9:35:07 PM: (19) ==========AddNewAccount.
+10/21/2021 9:38:10 PM: 	AddNewAccount: Test Passed:.
+
+10/21/2021 9:38:13 PM: (20) ==========AddService.
+10/21/2021 9:40:44 PM: 	AddService: Test Passed:.
+
+10/21/2021 9:42:34 PM: (21) ==========OpenRoleDetailScreen.
+10/21/2021 9:43:34 PM: 	OpenRoleDetailScreen: Test Passed:.
+
+10/21/2021 9:45:04 PM: (22) ==========MultiLanguageCheck.
+10/21/2021 9:45:35 PM: 	Epia.Modules.RnD_cn.resources OK.
+10/21/2021 9:46:01 PM: 	Epia.Modules.RnD_es.resources OK.
+10/21/2021 9:46:26 PM: 	Epia.Modules.RnD_de.resources OK.
+10/21/2021 9:46:50 PM: 	Epia.Modules.RnD_el.resources OK.
+10/21/2021 9:47:14 PM: 	Epia.Modules.RnD_fr.resources OK.
+10/21/2021 9:47:39 PM: 	Epia.Modules.RnD_nl.resources OK.
+10/21/2021 9:48:03 PM: 	Epia.Modules.RnD_pl.resources OK.
+10/21/2021 9:48:28 PM: 	Epia.Modules.RnD_en.resources OK.
+10/21/2021 9:48:28 PM: 	MultiLanguageCheck: Test Passed:.
+
+10/21/2021 9:48:31 PM: (23) ==========ShellConfigSecurity.
+10/21/2021 9:49:06 PM: 	ShellConfigSecurity: Test Passed:.
+
+10/21/2021 9:49:32 PM: (24) ==========LogonCurrentUser.
+10/21/2021 9:50:10 PM: 	LogonCurrentUser: Test Passed:.
+
+10/21/2021 9:50:43 PM: (25) ==========AccountInactivityTimeoutLogout.
+
+10/21/2021 9:50:46 PM: (25) ==========AccountInactivityTimeoutLogout.
+10/21/2021 9:51:21 PM: 	AccountInactivityTimeoutLogout: Test Passed:.
+10/21/2021 9:53:53 PM: 	AccountInactivityTimeoutLogout: Test Passed:.
+
+10/21/2021 9:54:44 PM: (26) ==========RoleInactivityTimeoutLogout.
+
+10/21/2021 9:54:47 PM: (26) ==========RoleInactivityTimeoutLogout.
+10/21/2021 9:55:21 PM: 	RoleInactivityTimeoutLogout: Test Passed:.
+10/21/2021 9:57:52 PM: 	RoleInactivityTimeoutLogout: Test Passed:.
+
+10/21/2021 10:02:02 PM: (27) ==========AccountInactivityTimeoutShutdown.
+
+10/21/2021 10:02:05 PM: (27) ==========AccountInactivityTimeoutShutdown.
+10/21/2021 10:02:39 PM: 	AccountInactivityTimeoutShutdown: Test Passed:.
+10/21/2021 10:06:17 PM: 	AccountInactivityTimeoutShutdown: Test Passed:.
+
+10/21/2021 10:06:51 PM: (28) ==========RoleInactivityTimeoutShutdown.
+
+10/21/2021 10:06:54 PM: (28) ==========RoleInactivityTimeoutShutdown.
+10/21/2021 10:07:28 PM: 	RoleInactivityTimeoutShutdown: Test Passed:.
+10/21/2021 10:11:06 PM: 	RoleInactivityTimeoutShutdown: Test Passed:.
+
+10/21/2021 10:13:45 PM: (29) ==========ShellShutdown.
+
+10/21/2021 10:13:48 PM: (29) ==========ShellShutdown.
+10/21/2021 10:14:22 PM: 	ShellShutdown: Test Passed:.
+10/21/2021 10:14:38 PM: 	Epia shutdown:.
+10/21/2021 10:14:44 PM: 	ShellShutdown: Test Passed:.
+
+10/21/2021 10:19:47 PM: (30) ==========ShellLogOff.
+10/21/2021 10:20:48 PM: 	ShellLogOff: Test Passed:.
+
+10/21/2021 10:21:39 PM: (31) ==========Epia4Close.
+10/21/2021 10:21:56 PM: 	Epia3 Closed.
+10/21/2021 10:21:56 PM: 	Epia4Close: Test Passed:.
+
+10/21/2021 10:21:59 PM: (32) ==========Epia4CleanUnstallCheck.
+10/21/2021 10:23:05 PM: 	Epia4CleanUnstallCheck: Test Passed:.
+
+10/21/2021 10:24:23 PM: (33) ==========Epia4CleanShellInstallCheck.
+10/21/2021 10:28:12 PM: 	Epia4CleanShellInstallCheck:error installed, Server folder exist,: Test Failed:.
+
+10/21/2021 10:28:13 PM: (34) ==========Epia4CleanServerInstallCheck.
+
+10/21/2021 10:28:13 PM: (34) ==========NoTestcase.
+10/21/2021 10:30:55 PM: 	Epia4CleanServerInstallCheck:Shell folder has more extra file than DocumentFormat.OpenXml.dll, Egemin.Epia.Foundation.SqlRptServices.Interfaces.dll, Egemin.Epia.Foundation.SqlRptServices.Interfaces.dll, Microsoft.VisualStudio.Shell.Design.dll, System.Reactive.Core.dll, System.Reactive.Interfaces.dll, System.Reactive.Linq.dll, System.Reactive.Windows.Threading.dll, --> :C5.dll;dematic_workplace.ico;DocumentFormat.OpenXml.dll;Egemin.Epia.CompositeUI.dll;Egemin.Epia.CompositeUI.pdb;Egemin.Epia.Foundation.Alarming.Interfaces.dll;Egemin.Epia.Foundation.Alarming.Interfaces.pdb;Egemin.Epia.Foundation.ComponentManagement.Configuration.dll;Egemin.Epia.Foundation.ComponentManagement.Configuration.pdb;Egemin.Epia.Foundation.ComponentManagement.Development.dll;Egemin.Epia.Foundation.ComponentManagement.Development.pdb;Egemin.Epia.Foundation.dll;Egemin.Epia.Foundation.Globalization.Interfaces.dll;Egemin.Epia.Foundation.Globalization.Interfaces.pdb;Egemin.Epia.Foundation.License.Interfaces.dll;Egemin.Epia.Foundation.License.Interfaces.pdb;Egemin.Epia.Foundation.pdb;Egemin.Epia.Foundation.Security.Interfaces.dll;Egemin.Epia.Foundation.Security.Interfaces.pdb;Egemin.Epia.Foundation.SqlRptServices.Interfaces.dll;Egemin.Epia.Foundation.SqlRptServices.Interfaces.pdb;Egemin.Epia.Foundation.VersionInformation.Interfaces.dll;Egemin.Epia.Foundation.VersionInformation.Interfaces.pdb;Egemin.Epia.Foundation.WindowsService.Interfaces.dll;Egemin.Epia.Modules.RnD.dll;Egemin.Epia.Modules.RnD.pdb;Egemin.Epia.Modules.SqlRptServices.dll;Egemin.Epia.Modules.SqlRptServices.pdb;Egemin.Epia.Presentation.Configuration.Interfaces.dll;Egemin.Epia.Presentation.Configuration.Interfaces.pdb;Egemin.Epia.Presentation.Development.dll;Egemin.Epia.Presentation.Development.pdb;Egemin.Epia.Presentation.dll;Egemin.Epia.Presentation.FileDlgExtenders.dll;Egemin.Epia.Presentation.FileDlgExtenders.pdb;Egemin.Epia.Presentation.pdb;Egemin.Epia.Shell.exe;Egemin.Epia.Shell.exe.config;Egemin.Epia.Shell.pdb;Infragistics.Practices.CompositeUI.WinForms.dll;Infragistics4.Shared.v11.2.dll;Infragistics4.Win.Misc.v11.2.dll;Infragistics4.Win.UltraWinDock.v11.2.dll;Infragistics4.Win.UltraWinEditors.v11.2.dll;Infragistics4.Win.UltraWinMaskedEdit.v11.2.dll;Infragistics4.Win.UltraWinStatusBar.v11.2.dll;Infragistics4.Win.UltraWinTabbedMdi.v11.2.dll;Infragistics4.Win.UltraWinTabControl.v11.2.dll;Infragistics4.Win.UltraWinToolbars.v11.2.dll;Infragistics4.Win.UltraWinTree.v11.2.dll;Infragistics4.Win.v11.2.dll;InfragisticsWPF4.Controls.Editors.XamCalendar.v11.2.dll;InfragisticsWPF4.Controls.Editors.XamDateTimeInput.v11.2.dll;InfragisticsWPF4.Controls.Editors.XamMaskedInput.v11.2.dll;InfragisticsWPF4.v11.2.dll;Microsoft.Practices.CompositeUI.dll;Microsoft.Practices.CompositeUI.WinForms.dll;Microsoft.Practices.EnterpriseLibrary.Common.dll;Microsoft.Practices.EnterpriseLibrary.Logging.dll;Microsoft.Practices.EnterpriseLibrary.Validation.dll;Microsoft.Practices.ObjectBuilder.dll;Microsoft.Practices.ObjectBuilder2.dll;Microsoft.Practices.Unity.dll;Microsoft.ReportViewer.Common.dll;Microsoft.ReportViewer.DataVisualization.dll;Microsoft.ReportViewer.WinForms.dll;Microsoft.VisualStudio.Shell.Design.dll;Microsoft.VisualStudio.Shell.Immutable.10.0.dll;Plossum.dll;SCSFContrib.CompositeUI.WinForms.dll;System.Reactive.Core.dll;System.Reactive.Interfaces.dll;System.Reactive.Linq.dll;System.Reactive.Windows.Threading.dll;: Test Failed:.
+
+10/21/2021 10:40:25 PM: (35) ==========UninstallEpiaResourceFileEditorIfAlreadyInstalled.
+10/21/2021 10:40:43 PM: 	UninstallEpiaResourceFileEditorIfAlreadyInstalled: Test Passed:.
+
+10/21/2021 10:40:46 PM: (36) ==========installEpiaResourceFileEditor.
+10/21/2021 10:43:55 PM: 	Epia.ResourceFileEditor install failed:Epia.ResourceFileEditor Installation exception : Index was outside the bounds of the array. --    at TFSQATestTools.ProjAppInstall.InstallApplicationNet45(String path, String App, SetupType setupType, String& errorMsg, Logger logger): Test Failed:.
+
+10/21/2021 10:43:59 PM: (37) ==========LoadEpiaResourceFiles.

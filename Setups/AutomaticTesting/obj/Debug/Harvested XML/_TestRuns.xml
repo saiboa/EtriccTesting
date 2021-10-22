@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TestRuns.Sources">
+            <Component Id="cmpB53E8C0FDEBAAFFA2622CFDF0770039B" Guid="{AD225030-27F4-4140-ACBD-737FBF59726C}">
+                <File Id="fil089C6B429FBBA7ECA4730612106557F3" Source="$(var.TestRuns.ProjectDir)\Logger.cs" />
+            </Component>
+            <Component Id="cmpF5232FA852706E661F73FDF2A2AC8A45" Guid="{D445DF76-70B1-4010-A314-E42FBA84F68C}">
+                <File Id="fil7DA1557E10F01A8010D7FD1A9846CCBA" Source="$(var.TestRuns.ProjectDir)\TestConstants.cs" />
+            </Component>
+            <Component Id="cmpCEF36E1EF3FB1F875AE022943A92ADE3" Guid="{AFA97B94-3AD3-4E0A-8AE7-0CF9FC768DC5}">
+                <File Id="fil35EF0CD81EAF504B539B1E5BECCE4808" Source="$(var.TestRuns.ProjectDir)\TestData.cs" />
+            </Component>
+            <Component Id="cmpEB9A65D35269301A5AB3C27ED064689F" Guid="{6BE1E1F0-FE6E-42BA-95E6-9898E45D1C34}">
+                <File Id="filB6EA5B936F9C13E1BB75A679C56D20D7" Source="$(var.TestRuns.ProjectDir)\TestProjectWorker.cs" />
+            </Component>
+            <Component Id="cmp2F3A644F33A2711C085369A97FD6442E" Guid="{91F0322D-5F8C-4619-9CA0-518AF72E237F}">
+                <File Id="fil5835674BB51DE0D1F68D556CD5BE6DF8" Source="$(var.TestRuns.ProjectDir)\TestUtility.cs" />
+            </Component>
+            <Component Id="cmp5092A678CD040026F79EAA53B90F8243" Guid="{3A9EEB3F-2213-45C0-A3D8-C4036EA5087F}">
+                <File Id="fil8F1560F274E4BED1691B1756FB240724" Source="$(var.TestRuns.ProjectDir)\TestWorker.cs" />
+            </Component>
+            <Component Id="cmp9ED7177BA95A570B02F364841AAFF59F" Guid="{ABD0A5D0-6F14-489D-ABB2-67F2CBD319CD}">
+                <File Id="fil8DFE3278D252FF13FA0894F554501842" Source="$(var.TestRuns.ProjectDir)\TestRuns.csproj" />
+            </Component>
+            <Directory Id="dir2B9A17F5A747254735843B4C519DBADA" Name="Properties">
+                <Component Id="cmp096F10215CF2E88E9D2F89EC1483B815" Guid="{20819686-6DF8-4345-A5C7-4B265569D157}">
+                    <File Id="fil9D84A665DEC857D0C47B6E7040DE4FAB" Source="$(var.TestRuns.ProjectDir)\Properties\AssemblyInfo.cs" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="TestRuns.Sources">
+            <ComponentRef Id="cmpB53E8C0FDEBAAFFA2622CFDF0770039B" />
+            <ComponentRef Id="cmpF5232FA852706E661F73FDF2A2AC8A45" />
+            <ComponentRef Id="cmpCEF36E1EF3FB1F875AE022943A92ADE3" />
+            <ComponentRef Id="cmpEB9A65D35269301A5AB3C27ED064689F" />
+            <ComponentRef Id="cmp2F3A644F33A2711C085369A97FD6442E" />
+            <ComponentRef Id="cmp5092A678CD040026F79EAA53B90F8243" />
+            <ComponentRef Id="cmp9ED7177BA95A570B02F364841AAFF59F" />
+            <ComponentRef Id="cmp096F10215CF2E88E9D2F89EC1483B815" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

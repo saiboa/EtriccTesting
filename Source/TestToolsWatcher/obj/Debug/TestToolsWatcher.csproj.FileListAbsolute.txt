@@ -1,0 +1,18 @@
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe.config
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\Team Systems\Epia 3\Testing\Automatic\AutomaticTests\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csprojResolveAssemblyReference.cache
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe.config
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\AutomaticTestsVS2015\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\AutomaticTestsVS2015\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\AutomaticTestsVS2015\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\AutomaticTestsVS2015\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe.config
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb

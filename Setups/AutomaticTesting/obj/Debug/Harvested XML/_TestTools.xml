@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TestTools.Binaries">
+            <Component Id="cmp1097924E8B32DF6BBA3927FFF60C6DB4" Guid="{23CBA9AB-B9CC-448F-AEF0-D5EF4D97255B}">
+                <File Id="filE18B95229FA09877A16E79BAC7504274" Source="$(var.TestTools.TargetDir)\Egemin.Epia.Testing.TestTools.dll" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="TestTools.Binaries">
+            <ComponentRef Id="cmp1097924E8B32DF6BBA3927FFF60C6DB4" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

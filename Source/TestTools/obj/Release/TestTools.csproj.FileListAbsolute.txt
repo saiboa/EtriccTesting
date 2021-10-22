@@ -1,0 +1,8 @@
+C:\AutomaticTests514\Source\TestTools\bin\Release\Egemin.Epia.Testing.TestTools.dll
+C:\AutomaticTests514\Source\TestTools\bin\Release\Egemin.Epia.Testing.TestTools.pdb
+C:\AutomaticTests514\Source\TestTools\bin\Release\Microsoft.VisualBasic.dll
+C:\AutomaticTests514\Source\TestTools\obj\Release\TestTools.csprojAssemblyReference.cache
+C:\AutomaticTests514\Source\TestTools\obj\Release\TestTools.csproj.CoreCompileInputs.cache
+C:\AutomaticTests514\Source\TestTools\obj\Release\TestTools.csproj.CopyComplete
+C:\AutomaticTests514\Source\TestTools\obj\Release\Egemin.Epia.Testing.TestTools.dll
+C:\AutomaticTests514\Source\TestTools\obj\Release\Egemin.Epia.Testing.TestTools.pdb
