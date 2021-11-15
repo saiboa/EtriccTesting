@@ -20,3 +20,11 @@ C:\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\QATestEpiaProtected.cs
 C:\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\Egemin.Epia.Testing.QATestEpiaProtected.exe
 C:\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\Egemin.Epia.Testing.QATestEpiaProtected.pdb
 C:\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\QATestEpiaProtected.csprojAssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaProtected.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaProtected.exe
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaProtected.pdb
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\QATestEpiaProtected.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\QATestEpiaProtected.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\QATestEpiaProtected.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\Egemin.Epia.Testing.QATestEpiaProtected.exe
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaProtected\obj\Debug\Egemin.Epia.Testing.QATestEpiaProtected.pdb

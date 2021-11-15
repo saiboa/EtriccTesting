@@ -26,3 +26,13 @@ C:\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csproj.CoreCompileInpu
 C:\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csproj.CopyComplete
 C:\AutomaticTests514\Source\TestTools\obj\Debug\Egemin.Epia.Testing.TestTools.dll
 C:\AutomaticTests514\Source\TestTools\obj\Debug\Egemin.Epia.Testing.TestTools.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestTools.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestTools.dll.CodeAnalysisLog.xml
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestTools.dll.lastcodeanalysissucceeded
+\\192.168.1.4\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\TestTools\obj\Debug\Egemin.Epia.Testing.TestTools.dll
+\\192.168.1.4\AutomaticTests514\Source\TestTools\obj\Debug\Egemin.Epia.Testing.TestTools.pdb
+C:\AutomaticTests514\Source\TestTools\obj\Debug\TestTools.csprojAssemblyReference.cache

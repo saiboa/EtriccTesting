@@ -20,3 +20,11 @@ C:\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\QATestEtriccUI.csproj.CoreC
 C:\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\QATestEtriccUI.csproj.CopyComplete
 C:\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\Egemin.Epia.Testing.QATestEtriccUI.exe
 C:\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\Egemin.Epia.Testing.QATestEtriccUI.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccUI.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccUI.exe
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccUI.pdb
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\QATestEtriccUI.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\QATestEtriccUI.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\QATestEtriccUI.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\Egemin.Epia.Testing.QATestEtriccUI.exe
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccUI\obj\Debug\Egemin.Epia.Testing.QATestEtriccUI.pdb

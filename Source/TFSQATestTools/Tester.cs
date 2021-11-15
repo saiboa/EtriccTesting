@@ -113,7 +113,7 @@ namespace TFSQATestTools
         // --- BUILD
         TfsTeamProjectCollection tfsProjectCollection = null;
         IBuildServer m_BuildSvc;
-        private bool TFSConnected = true;
+        private bool TFSConnected = false;
 
         string sEtricc5InstallationFolder = string.Empty;
         private const string REGKEY = "Software\\Egemin\\Automatic testing\\";
@@ -269,7 +269,7 @@ namespace TFSQATestTools
                 sIsDeployed = false;
                 sDeploymentEndTime = DateTime.Now;
                 m_TestPC = System.Environment.MachineName;
-
+                
                 if (TFSConnected)
                 {
                     Log("Connect to TFS");
@@ -285,9 +285,9 @@ namespace TFSQATestTools
 
                     m_BuildSvc = (IBuildServer)tfsProjectCollection.GetService(typeof(IBuildServer));
                 }
-
+                
                 //TeamFoundationServer TFS = TeamFoundationServerFactory.GetServer(Constants.sTFSServer);
-                WorkItemStore store = (WorkItemStore)tfsProjectCollection.GetService(typeof(WorkItemStore));
+                //WorkItemStore store = (WorkItemStore)tfsProjectCollection.GetService(typeof(WorkItemStore));
                 //WorkItemType wiType = store.Projects[8].WorkItemTypes[1];
                 // project nedds to be checked 
                 //MessageBox.Show("store projects: " + store.Projects[8].ToString() + "  ");
@@ -635,7 +635,7 @@ namespace TFSQATestTools
                 //MessageBox.Show("m_BuildSvc" + m_BuildSvc.GetBuildDefinition(GetProjectName(testApp),"").Id);
                 try
                 {
-                    m_Uri = TfsUtilities.GetBuildUriFromBuildNumber(m_BuildSvc, TfsUtilities.GetProjectName(mTestApp), m_BuildNumber);
+                    //m_Uri = TfsUtilities.GetBuildUriFromBuildNumber(m_BuildSvc, TfsUtilities.GetProjectName(mTestApp), m_BuildNumber);
                 }
                 catch (Exception ex)
                 {
@@ -711,7 +711,7 @@ namespace TFSQATestTools
                             //Uri uri = TestTools.TfsUtilities.GetBuildUriFromBuildNumber(m_BuildSvc,
                             //   TestTools.TfsUtilities.GetProjectName(mTestApp), m_BuildNumber);
                             // m_Uri = TestTools.TfsUtilities.GetBuildUriFromBuildNumber(m_BuildSvc, BuildUtilities.GetProjectName(mTestApp), m_BuildNumber);
-                            string quality = m_BuildSvc.GetMinimalBuildDetails(m_Uri).Quality;
+                            string quality = "m_BuildSvc.GetMinimalBuildDetails(m_Uri).Quality";
 
                             sErrorMessage = string.Empty;
                             mTestDefFile = @"C:\EtriccTests\QA\TestDefinitions\" + TfsUtilities.GetTestDefNameFromTestApp(mTestApp);
@@ -3983,6 +3983,22 @@ namespace TFSQATestTools
         public static string GetErrorMessage()
         {
             return sErrorMessage;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Tester tester &&
+                   EqualityComparer<IBuildServer>.Default.Equals(m_BuildSvc, tester.m_BuildSvc);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public enum STATE

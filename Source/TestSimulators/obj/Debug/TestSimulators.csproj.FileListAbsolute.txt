@@ -33,4 +33,16 @@ C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CoreC
 C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CopyComplete
 C:\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.exe
 C:\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe.config
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.exe
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestSimulators.pdb
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\bin\Debug\Egemin.Epia.Testing.TestTools.dll
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.TestSimulators.resources
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.Properties.Resources.resources
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.GenerateResource.cache
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.exe
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\Egemin.Epia.Testing.TestSimulators.pdb
 C:\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csprojAssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\TestSimulators\obj\Debug\TestSimulators.csproj.AssemblyReference.cache

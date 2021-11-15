@@ -16,3 +16,11 @@ C:\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
 C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csproj.CoreCompileInputs.cache
 C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
 C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+\\192.168.1.4\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.exe
+\\192.168.1.4\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\Egemin.Epia.Testing.TestToolsWatcher.pdb
+C:\AutomaticTests514\Source\TestToolsWatcher\obj\Debug\TestToolsWatcher.csprojAssemblyReference.cache

@@ -33,4 +33,17 @@ C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CoreCompi
 C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CopyComplete
 C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
 C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\EpiaServerFolderFiles.txt
+\\192.168.1.4\AutomaticTests514\bin\Debug\EpiaServerFolderNET4Files.txt
+\\192.168.1.4\AutomaticTests514\bin\Debug\EpiaShellFolderFiles.txt
+\\192.168.1.4\AutomaticTests514\bin\Debug\EpiaShellFolderNET4Files.txt
+\\192.168.1.4\AutomaticTests514\bin\Debug\QATestEpiaUI.bat
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.exe
+\\192.168.1.4\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\Egemin.Epia.Testing.QATestEpiaUI.pdb
 C:\AutomaticTests514\Source\QATestEpiaUI\obj\Debug\QATestEpiaUI.csprojAssemblyReference.cache

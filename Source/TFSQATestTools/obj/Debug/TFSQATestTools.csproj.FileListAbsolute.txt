@@ -53,3 +53,16 @@ C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CoreC
 C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CopyComplete
 C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
 C:\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.exe
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\TFSQATestTools.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\TFSQATestTools.exe
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.Configuration.resources
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildDefinitionsForm.resources
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.GetBuildNumbersForm.resources
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.HostTestForm.resources
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.ToolsForm.resources
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.GenerateResource.cache
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\TFSQATestTools\obj\Debug\TFSQATestTools.csproj.CopyComplete

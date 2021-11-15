@@ -23,3 +23,12 @@ C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatist
 C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CopyComplete
 C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
 C:\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+\\192.168.1.4\AutomaticTests514\bin\Debug\QATestEtriccStatistics.bat
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe.config
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+\\192.168.1.4\AutomaticTests514\bin\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.AssemblyReference.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CoreCompileInputs.cache
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\QATestEtriccStatistics.csproj.CopyComplete
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.exe
+\\192.168.1.4\AutomaticTests514\Source\QATestEtriccStatistics\obj\Debug\Egemin.Epia.Testing.QATestEtriccStatistics.pdb

@@ -1983,5 +1983,779 @@ namespace TFSQATestTools
         {
 
         }
+
+        private void buildProjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AutomationEventHandler UIOpenBuilderDialogEventHandler = new AutomationEventHandler(UIOpenBuilderDialogEvent);
+            AutomationElement aeScriptWindow = null;
+            string scriptWindowId = "frmScript";
+            AutomationElement aeRunScriptBtn = null;
+            bool testOK = true;
+            DateTime mBuildTime = DateTime.Now;
+            // rub script
+            try
+            {
+                tester.Log(" ---------- start building...  ---------- ");
+                #region
+                Thread.Sleep(3000);
+                DateTime mAppTime = DateTime.Now;
+                AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                if (aeScriptWindow == null)
+                {
+                    string sErrorMessage = "Script Window  not found";
+                    tester.Log($" ---------- {sErrorMessage}  ---------- ");
+                    testOK = false;
+                }
+                else
+                {
+                    tester.Log("Script window Found  ------------:");
+                    aeScriptWindow.SetFocus();
+                    Thread.Sleep(3000);
+                    // Find aeRunScriptBtn
+                    System.Windows.Automation.Condition cRunButton = new AndCondition(
+                        new PropertyCondition(AutomationElement.NameProperty, "Run script [F5]"),
+                        new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                    );
+
+                    // new UI version RunScriptBtn name changed to "Run Script [F5]"   -- added at 22-07-2014
+                    System.Windows.Automation.Condition cRunButtonNew = new AndCondition(
+                        new PropertyCondition(AutomationElement.NameProperty, "Run Script [F5]"),
+                        new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                    );
+
+                    aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButton);
+                    if (aeRunScriptBtn == null)   // 
+                    {   // find in New version UI
+                        Console.WriteLine("cRunButton find in New version UI.. :");
+                        aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButtonNew);
+                    }
+
+                    if (aeRunScriptBtn != null)
+                    {
+                        tester.Log("Run script Button Found ------------:");
+                        System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeRunScriptBtn);
+                        Thread.Sleep(3000);
+                        mAppTime = DateTime.Now;
+                        Input.MoveToAndClick(pt);
+                    }
+                    else
+                    {
+                        string sErrorMessage = "cRunButton  not found ------------:";
+                        tester.Log(sErrorMessage);
+                        testOK = false;
+                    }
+                }
+                #endregion
+
+                // wait until "Simulation?" window open
+                if (testOK)
+                {
+                    tester.Log("1   looking for Simulation DialogBox ------------------------------");
+                    DateTime sStartTime = DateTime.Now;
+                    TimeSpan mTime = DateTime.Now - sStartTime;
+
+                    // Find root type window
+                    System.Windows.Automation.Condition cWindowSplash = new AndCondition(
+                    new PropertyCondition(AutomationElement.AutomationIdProperty, "frmSplash"),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+
+
+                    System.Windows.Automation.Condition cSimulationWindow = new AndCondition(
+                    new PropertyCondition(AutomationElement.NameProperty, "Simulation?"),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+                    AutomationElement aeWindowSimulation = null;
+                    while (aeWindowSimulation == null && mTime.TotalSeconds <= 6000000)
+                    {
+                        Thread.Sleep(9000);
+                        mTime = DateTime.Now - sStartTime;
+                        Console.WriteLine(" find  aeWindowSimulation ------------:" + mTime.TotalSeconds);
+                        AutomationElement aeWindowSplash = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cWindowSplash);
+                        if (aeWindowSplash == null)
+                        {
+                            tester.Log("111111111111111   aeWindowSplash NOT FOUND");
+                        }
+                        else
+                        {
+                            tester.Log("111111111111111x   aeWindowSplash FOUND -- continue to find  aeWindowSimulation");
+                            aeWindowSimulation = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cSimulationWindow);
+                            if (aeWindowSimulation == null)
+                            {
+                                Console.WriteLine("111111111111111   aeWindowSimulation NOT FOUND");
+                            }
+                            else
+                            {
+                                tester.Log("111111111111111   aeWindowSimulation FOUND");
+                                tester.Log(" find  aeWindowSimulation ------------mTime.TotalSeconds:" + mTime.TotalSeconds);
+                            }
+                        }
+
+                        //----------------------------------- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+                        #region 
+                        if (mTime.TotalSeconds > 60)
+                        {
+                            Console.WriteLine(" check script running status ------------:");
+                            DateTime StartTime2 = DateTime.Now;
+                            TimeSpan mAppTime2 = DateTime.Now - StartTime2;
+                            AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                            if (aeScriptWindow == null)
+                            {
+                                string sErrorMessage = "Script Window  not found";
+                                Console.WriteLine(sErrorMessage);
+                                testOK = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Script window found3 ------------time1: " + mTime.TotalSeconds);
+                                Thread.Sleep(3000);
+                                // Find status bar running status
+                                AutomationElement aeRunningStatusBar = AUIUtilities.FindElementByType(ControlType.StatusBar, aeScriptWindow);
+                                if (aeRunningStatusBar != null)
+                                {
+                                    Console.WriteLine("caeRunningStatusBar found ------------:" + aeRunningStatusBar.Current.Name);
+                                    if (aeRunningStatusBar.Current.Name.IndexOf("Script has errors") >= 0)
+                                    {
+                                        string sErrorMessage = "running script failed,  Script has errors:";
+                                        Console.WriteLine(sErrorMessage);
+                                        TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                        testOK = false;
+                                        break;
+                                    }
+                                    else if (aeRunningStatusBar.Current.Name.IndexOf("Script running...") >= 0)
+                                    {
+                                        if (mTime.TotalSeconds > 6000000)
+                                        {
+                                            string sErrorMessage = "Script is still running ......time2: " + mTime.TotalSeconds;
+                                            Console.WriteLine(sErrorMessage);
+                                            TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                            testOK = false;
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            mTime = DateTime.Now - sStartTime;
+                                            Console.WriteLine("mTime.TotalSeconds =  " + mTime.TotalSeconds);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #endregion
+                    }  // End while
+
+                    if (aeWindowSimulation == null)
+                    {
+                        tester.Log("   aeWindowSimulation NOT FOUND ------------------------------");
+                        testOK = false;
+                    }
+                    else
+                    {
+                        System.Windows.Automation.Condition cButtonYes = new AndCondition(
+                               new PropertyCondition(AutomationElement.NameProperty, "Yes"),
+                               new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                           );
+
+                        AutomationElement aeBtnYes = aeWindowSimulation.FindFirst(TreeScope.Descendants, cButtonYes);
+                        /*if (aeBtnYes == null)   // 
+                        {   // find in New version UI
+                            Console.WriteLine("cRunButton find in New version UI.. :");
+                            aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButtonNew);
+                        }*/
+
+                        if (aeBtnYes != null)
+                        {
+                            tester.Log("1111111111 Simulation aeBtnYes found ------------:");
+                            System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeBtnYes);
+                            Thread.Sleep(3000);
+                            Input.MoveToAndClick(pt);
+                            Thread.Sleep(3000);
+                        }
+                        else
+                        {
+                            string sErrorMessage = "aeBtnYes  not found ------------:";
+                            tester.Log(sErrorMessage);
+                            testOK = false;
+                        }
+
+                    }
+                }
+
+                // wait until "Emulation?" window open
+                if (testOK)
+                {
+                    tester.Log("2   looking for Emulation DialogBox ------------------------------");
+                    DateTime sStartTime = DateTime.Now;
+                    TimeSpan mTime = DateTime.Now - sStartTime;
+
+                    // Find root type window
+                    System.Windows.Automation.Condition cWindowSplash = new AndCondition(
+                    new PropertyCondition(AutomationElement.AutomationIdProperty, "frmSplash"),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+
+
+                    System.Windows.Automation.Condition cSimulationWindow = new AndCondition(
+                    new PropertyCondition(AutomationElement.NameProperty, "Emulation?"),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+                    AutomationElement aeWindowSimulation = null;
+                    while (aeWindowSimulation == null && mTime.TotalSeconds <= 6000000000)
+                    {
+                        Thread.Sleep(9000);
+                        mTime = DateTime.Now - sStartTime;
+                        Console.WriteLine(" find  aeWindowSimulation ------------:" + mTime.TotalSeconds);
+                        AutomationElement aeWindowSplash = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cWindowSplash);
+                        if (aeWindowSplash == null)
+                        {
+                            tester.Log("222222222222222   aeWindowSplash NOT FOUND");
+                        }
+                        else
+                        {
+                            tester.Log("222222222222222   aeWindowSplash FOUND -- continue to find  aeWindowSimulation");
+                            aeWindowSimulation = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cSimulationWindow);
+                            if (aeWindowSimulation == null)
+                            {
+                                Console.WriteLine("22222222222222   aeWindowSimulation NOT FOUND");
+                            }
+                            else
+                            {
+                                tester.Log("22222222222222x   aeWindow Emulation FOUND");
+                                mTime = DateTime.Now - sStartTime;
+                                tester.Log(" find  aeWindow Emulation ------------mTime.TotalSeconds:" + mTime.TotalSeconds);
+                            }
+                        }
+
+                        //----------------------------------- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+                        #region 
+                        if (mTime.TotalSeconds > 60)
+                        {
+                            Console.WriteLine(" check script running status ------------:");
+                            DateTime StartTime2 = DateTime.Now;
+                            TimeSpan mAppTime2 = DateTime.Now - StartTime2;
+                            AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                            if (aeScriptWindow == null)
+                            {
+                                string sErrorMessage = "Script Window  not found";
+                                Console.WriteLine(sErrorMessage);
+                                testOK = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Script window found3 ------------time1: " + mTime.TotalSeconds);
+                                Thread.Sleep(3000);
+                                // Find status bar running status
+                                AutomationElement aeRunningStatusBar = AUIUtilities.FindElementByType(ControlType.StatusBar, aeScriptWindow);
+                                if (aeRunningStatusBar != null)
+                                {
+                                    Console.WriteLine("caeRunningStatusBar found ------------:" + aeRunningStatusBar.Current.Name);
+                                    if (aeRunningStatusBar.Current.Name.IndexOf("Script has errors") >= 0)
+                                    {
+                                        string sErrorMessage = "running script failed,  Script has errors:";
+                                        Console.WriteLine(sErrorMessage);
+                                        TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                        testOK = false;
+                                        break;
+                                    }
+                                    else if (aeRunningStatusBar.Current.Name.IndexOf("Script running...") >= 0)
+                                    {
+                                        if (mTime.TotalSeconds > 600)
+                                        {
+                                            string sErrorMessage = "Script is still running ......time2: " + mTime.TotalSeconds;
+                                            Console.WriteLine(sErrorMessage);
+                                            TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                            testOK = false;
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            mTime = DateTime.Now - sStartTime;
+                                            Console.WriteLine("mTime.TotalSeconds =  " + mTime.TotalSeconds);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #endregion
+                    }  // End while
+
+                    if (aeWindowSimulation == null)
+                    {
+                        tester.Log("   aeWindowEmulation NOT FOUND ------------------------------");
+                        testOK = false;
+                    }
+                    else
+                    {
+                        System.Windows.Automation.Condition cButtonYes = new AndCondition(
+                               new PropertyCondition(AutomationElement.NameProperty, "No"),
+                               new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                           );
+
+                        AutomationElement aeBtnYes = aeWindowSimulation.FindFirst(TreeScope.Descendants, cButtonYes);
+                        /*if (aeBtnYes == null)   // 
+                        {   // find in New version UI
+                            Console.WriteLine("cRunButton find in New version UI.. :");
+                            aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButtonNew);
+                        }*/
+
+                        if (aeBtnYes != null)
+                        {
+                            tester.Log("aeBtnNo found ------------:");
+                            System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeBtnYes);
+                            Thread.Sleep(3000);
+                            Input.MoveToAndClick(pt);
+                        }
+                        else
+                        {
+                            string sErrorMessage = "aeBtnNo  not found ------------:";
+                            tester.Log(sErrorMessage);
+                            testOK = false;
+                        }
+
+                    }
+                  
+                }
+
+               
+                // Add Open window Event Handler
+                Automation.AddAutomationEventHandler(WindowPattern.WindowOpenedEvent,
+                  AutomationElement.RootElement, TreeScope.Descendants, UIOpenBuilderDialogEventHandler);
+
+                // wait until "Builder" window open
+                if (testOK)
+                {
+                    tester.Log("3   Ignore Open Builder DialogBox ------------------------------");
+                   
+                }
+
+                // wait until "Pack Layout" window open
+                if (testOK)
+                {
+                    tester.Log("4   looking for Pack Layout DialogBox ------------------------------");
+                    DateTime sStartTime = DateTime.Now;
+                    TimeSpan mTime = DateTime.Now - sStartTime;
+
+                    // Find root type window
+                    System.Windows.Automation.Condition cWindowSplash = new AndCondition(
+                    new PropertyCondition(AutomationElement.AutomationIdProperty, "frmSplash"),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+
+
+                    System.Windows.Automation.Condition cSimulationWindow = new AndCondition(
+                    new PropertyCondition(AutomationElement.IsContentElementProperty, true),
+                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                    );
+                    AutomationElement aeWindowSimulation = null;
+                    bool openedPackLayoutDialogBox = false;
+                    while (openedPackLayoutDialogBox == false && mTime.TotalSeconds <= 600000000)
+                    {
+                        Thread.Sleep(9000);
+                        mTime = DateTime.Now - sStartTime;
+                        Console.WriteLine(" find  aeWindowSimulation ------------:" + mTime.TotalSeconds);
+                        AutomationElement aeWindowSplash = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cWindowSplash);
+                        if (aeWindowSplash == null)
+                        {
+                            tester.Log("444444444444444   aeWindowSplash NOT FOUND");
+                        }
+                        else
+                        {
+                            tester.Log("444444444444444   aeWindowSplash FOUND -- continue to find  aeWindow Pacl Layout");
+                            aeWindowSimulation = aeWindowSplash.FindFirst(TreeScope.Descendants, cSimulationWindow);
+                            if (aeWindowSimulation == null)
+                            {
+                                Console.WriteLine("444444444444444   aeWindowSimulation NOT FOUND");
+                            }
+                            else
+                            {
+                                // find 	"Do you want to pack the layout?" Text:
+                                tester.Log("444444444444444   aeWindow  FOUND --> looking for text Do you want to pack the layout?");
+                                System.Windows.Automation.Condition cTextPackLayout = new AndCondition(
+                                    new PropertyCondition(AutomationElement.NameProperty, "Do you want to pack the layout?"),
+                                    new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Text)
+                                    );
+
+                                AutomationElement aeTextPackLayout = aeWindowSimulation.FindFirst(TreeScope.Descendants, cTextPackLayout);
+                                if (aeTextPackLayout == null)
+                                {
+                                    tester.Log("444444444444444   aeTextPackLayout NOT FOUND");
+                                }
+                                else
+                                {
+                                    openedPackLayoutDialogBox = true;
+                                    mTime = DateTime.Now - sStartTime;
+                                    tester.Log("444444444444444 find  aeTextPackLayout ------------mTime.TotalSeconds:" + mTime.TotalSeconds);
+                                }
+                            }
+                        }
+
+                        //-----------------------------------
+                        #region 
+                        if (mTime.TotalSeconds > 60)
+                        {
+                            tester.Log("444444444444444 check script running status ------------:");
+                            DateTime StartTime4 = DateTime.Now;
+                            TimeSpan mTime4 = DateTime.Now - StartTime4;
+                            AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                            if (aeScriptWindow == null)
+                            {
+                                string sErrorMessage = "444444444444444 Script Window  not found";
+                                tester.Log(sErrorMessage);
+                                testOK = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Script window found3 ------------time1: " + mTime.TotalSeconds);
+                                Thread.Sleep(3000);
+                                // Find status bar running status
+                                AutomationElement aeRunningStatusBar = AUIUtilities.FindElementByType(ControlType.StatusBar, aeScriptWindow);
+                                if (aeRunningStatusBar != null)
+                                {
+                                    Console.WriteLine("caeRunningStatusBar found ------------:" + aeRunningStatusBar.Current.Name);
+                                    if (aeRunningStatusBar.Current.Name.IndexOf("Script has errors") >= 0)
+                                    {
+                                        string sErrorMessage = "running script failed,  Script has errors:";
+                                        tester.Log(sErrorMessage);
+                                        //TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                        testOK = false;
+                                        break;
+                                    }
+                                    else if (aeRunningStatusBar.Current.Name.IndexOf("Script running...") >= 0)
+                                    {
+                                        if (mTime.TotalSeconds > 6000000000)
+                                        {
+                                            string sErrorMessage = "Script is still running ......time2: " + mTime.TotalSeconds;
+                                            tester.Log(sErrorMessage);
+                                            //TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                            //testOK = false;
+                                            //break;
+                                        }
+                                        else
+                                        {
+                                            mTime = DateTime.Now - sStartTime;
+                                            Console.WriteLine("mTime.TotalSeconds =  " + mTime.TotalSeconds);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #endregion
+                    }  // End while
+
+                    if (aeWindowSimulation == null)
+                    {
+                        tester.Log("   aeWindowPackLayout NOT FOUND ------------------------------");
+                        testOK = false;
+                    }
+                    else
+                    {
+                        System.Windows.Automation.Condition cButtonYes = new AndCondition(
+                               new PropertyCondition(AutomationElement.NameProperty, "No"),
+                               new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                           );
+
+                        AutomationElement aeBtnYes = aeWindowSimulation.FindFirst(TreeScope.Descendants, cButtonYes);
+                        /*if (aeBtnYes == null)   // 
+                        {   // find in New version UI
+                            Console.WriteLine("cRunButton find in New version UI.. :");
+                            aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButtonNew);
+                        }*/
+
+                        if (aeBtnYes != null)
+                        {
+                            tester.Log("444444444444444 No button found ------------:");
+                            System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeBtnYes);
+                            Thread.Sleep(3000);
+                            Input.MoveToAndClick(pt);
+                        }
+                        else
+                        {
+                            string sErrorMessage = "No button  not found ------------:";
+                            tester.Log(sErrorMessage);
+                            testOK = false;
+                        }
+
+                    }
+
+                }
+
+              
+                // wait until 
+                // validate "Script ran successfully";
+                if (testOK)
+                {
+                    tester.Log("5   looking for Script ran successfully Text ------------------------------");
+                    #region
+                    Thread.Sleep(3000);
+                    DateTime sStartTime = DateTime.Now;
+                    TimeSpan mTime = DateTime.Now - sStartTime;
+                    // waitUntil 
+                    bool script_ran_successfully = false;
+                    while (script_ran_successfully == false && mTime.TotalSeconds <= 600)
+                    {
+                        AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                        if (aeScriptWindow == null)
+                        {
+                            string sErrorMessage = "Script Window  not found";
+                            tester.Log(sErrorMessage);
+                            testOK = false;
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Script window found ------------:");
+                            //Thread.Sleep(3000);
+                            bool scriptWindowSetFocus = false;
+                            while (scriptWindowSetFocus == false)
+                            {
+                                try
+                                {
+                                    aeScriptWindow.SetFocus();
+                                    scriptWindowSetFocus = true;
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine("scriptWindowSetFocus exception ------------:" + ex.Message);
+                                    Thread.Sleep(5000);
+                                }
+
+                            }
+
+                            Thread.Sleep(3000);
+                            // Find root type window
+                            System.Windows.Automation.Condition cRunButton = new AndCondition(
+                                new PropertyCondition(AutomationElement.NameProperty, "Script ran successfully"),
+                                new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.StatusBar)
+                            );
+
+                            aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButton);
+                            if (aeRunScriptBtn != null)
+                            {
+                                Console.WriteLine("Script ran successfully found ------------:");
+                                System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeRunScriptBtn);
+                                Thread.Sleep(3000);
+                                script_ran_successfully = true;
+                                tester.Log("Script ran successfully found ------------:");
+                                TimeSpan sTotalBuildTime = DateTime.Now- mAppTime;
+                                tester.Log($" Total builder time :" + sTotalBuildTime.ToString(@"d\.hh\:mm\:ss")  );
+                                //Input.MoveToAndClick(pt);
+                            }
+                            else
+                            {
+                                testOK = false;
+                                string sErrorMessage = "Script ran successfully  not found ------------:";
+                                tester.Log(sErrorMessage);
+                            }
+                        }
+                    }
+                    
+                    #endregion
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message + "--- " + ex.StackTrace, "Project Build Exception");
+            }
+            finally
+            {
+                Automation.RemoveAutomationEventHandler(WindowPattern.WindowOpenedEvent,
+                         AutomationElement.RootElement, UIOpenBuilderDialogEventHandler);
+            }
+        }
+
+        // ———————————————————————————————————————————————————————————————————————————————————————————————————————————— 
+        #region UIOpenBuilderDialogEvent
+        public static void UIOpenBuilderDialogEvent(object src, AutomationEventArgs args)
+        {
+            Console.WriteLine("OnUIAShellEvent-Begin");
+            AutomationElement element;
+            try
+            {
+                element = src as AutomationElement;
+            }
+            catch
+            {
+                return;
+            }
+
+            string name = "";
+            if (element == null)
+                name = "null";
+            else
+            {
+                name = element.GetCurrentPropertyValue(
+                    AutomationElement.NameProperty) as string;
+            }
+
+            if (name.Length == 0) name = "<NoName>";
+            string str = string.Format("OnUIAShellEvent:={0} : {1}", name, args.EventId.ProgrammaticName);
+            Console.WriteLine(str);
+
+            Thread.Sleep(2000);
+            if (name.Equals("Builder"))
+            {
+                DateTime sStartTime = DateTime.Now;
+                TimeSpan mTime = DateTime.Now - sStartTime;
+
+                // Find root type window
+                System.Windows.Automation.Condition cWindowSplash = new AndCondition(
+                new PropertyCondition(AutomationElement.AutomationIdProperty, "frmSplash"),
+                new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                );
+
+
+                System.Windows.Automation.Condition cSimulationWindow = new AndCondition(
+                new PropertyCondition(AutomationElement.NameProperty, "Builder"),
+                new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Window)
+                );
+                AutomationElement aeWindowSimulation = null;
+                while (aeWindowSimulation == null && mTime.TotalSeconds <= 600)
+                {
+                    Thread.Sleep(9000);
+                    mTime = DateTime.Now - sStartTime;
+                    Console.WriteLine(" find  aeWindowSimulation ------------:" + mTime.TotalSeconds);
+                    AutomationElement aeWindowSplash = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cWindowSplash);
+                    if (aeWindowSplash == null)
+                    {
+                        string sErrorMessage = "aeWindowSplash NOT FOUND";
+                        //tester.Log("333333333333333   aeWindowSplash NOT FOUND");
+                        System.Windows.MessageBox.Show("Error: "+ sErrorMessage, "UIOpenBuilderDialogEvent: name = "+name);
+                    }
+                    else
+                    {
+                        //tester.Log("333333333333333   aeWindowSplash FOUND -- continue to find  aeWindowSimulation");
+                        aeWindowSimulation = AutomationElement.RootElement.FindFirst(TreeScope.Descendants, cSimulationWindow);
+                        if (aeWindowSimulation == null)
+                        {
+                            Console.WriteLine("333333333333333   aeWindowSimulation NOT FOUND");
+                        }
+                        else
+                        {
+                            //tester.Log("333333333333333   aeWindowSimulation FOUND");
+                            //tester.Log(" find  aeWindowSimulation ------------mTime.TotalSeconds:" + mTime.TotalSeconds);
+                        }
+                    }
+
+                    //----------------------------------- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+                    #region 
+                    if (mTime.TotalSeconds > 60)
+                    {
+                        Console.WriteLine(" check script running status ------------:");
+                        DateTime StartTime2 = DateTime.Now;
+                        TimeSpan mAppTime2 = DateTime.Now - StartTime2;
+                        AutomationElement aeScriptWindow = null;
+                        string scriptWindowId = "frmScript";
+
+                        AUIUtilities.WaitUntilElementByIDFound(AutomationElement.RootElement, ref aeScriptWindow, scriptWindowId, DateTime.Now, 300);
+                        if (aeScriptWindow == null)
+                        {
+                            string sErrorMessage = "Script Window  not found";
+                            Console.WriteLine(sErrorMessage);
+                            System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Script window found3 ------------time1: " + mTime.TotalSeconds);
+                            Thread.Sleep(3000);
+                            // Find status bar running status
+                            AutomationElement aeRunningStatusBar = AUIUtilities.FindElementByType(ControlType.StatusBar, aeScriptWindow);
+                            if (aeRunningStatusBar != null)
+                            {
+                                Console.WriteLine("caeRunningStatusBar found ------------:" + aeRunningStatusBar.Current.Name);
+                                if (aeRunningStatusBar.Current.Name.IndexOf("Script has errors") >= 0)
+                                {
+                                    string sErrorMessage = "running script failed,  Script has errors:";
+                                    Console.WriteLine(sErrorMessage);
+                                    TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                    System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                                    break;
+                                }
+                                else if (aeRunningStatusBar.Current.Name.IndexOf("Script running...") >= 0)
+                                {
+                                    if (mTime.TotalSeconds > 600)
+                                    {
+                                        string sErrorMessage = "Script is still running ......time2: " + mTime.TotalSeconds;
+                                        Console.WriteLine(sErrorMessage);
+                                        TestTools.ProcessUtilities.CloseProcess("EPIA.Explorer");
+                                        System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        mTime = DateTime.Now - sStartTime;
+                                        Console.WriteLine("mTime.TotalSeconds =  " + mTime.TotalSeconds);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #endregion
+                }  // End while
+
+                if (aeWindowSimulation == null)
+                {
+                    //tester.Log("   aeWindowEmulation NOT FOUND ------------------------------");
+                    string sErrorMessage = $"   aeWindow {name}  NOT FOUND ------------------------------";
+                    System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                }
+                else
+                {
+                    System.Windows.Automation.Condition cButtonYes = new AndCondition(
+                           new PropertyCondition(AutomationElement.NameProperty, "Ignore"),
+                           new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                       );
+
+                    AutomationElement aeBtnYes = aeWindowSimulation.FindFirst(TreeScope.Descendants, cButtonYes);
+                    /*if (aeBtnYes == null)   // 
+                    {   // find in New version UI
+                        Console.WriteLine("cRunButton find in New version UI.. :");
+                        aeRunScriptBtn = aeScriptWindow.FindFirst(TreeScope.Descendants, cRunButtonNew);
+                    }*/
+
+                    if (aeBtnYes != null)
+                    {
+                        //tester.Log("Ignore button found ------------:");
+                        System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeBtnYes);
+                        Thread.Sleep(3000);
+                        Input.MoveToAndClick(pt);
+                    }
+                    else
+                    {
+                        string sErrorMessage = "Ignore button  not found ------------:";
+                        //tester.Log(sErrorMessage);
+                        //testOK = false;
+                        System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                    }
+
+                }
+
+            }
+            else if (name.Equals("Hostport simulation?"))
+            {
+                DateTime sStartTime = DateTime.Now;
+                TimeSpan mTime = DateTime.Now - sStartTime;
+
+                    System.Windows.Automation.Condition cButtonYes = new AndCondition(
+                           new PropertyCondition(AutomationElement.NameProperty, "No"),
+                           new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Button)
+                       );
+
+                    AutomationElement aeBtnYes = element.FindFirst(TreeScope.Descendants, cButtonYes);
+                    if (aeBtnYes != null)
+                    {
+                        System.Windows.Point pt = AUIUtilities.GetElementCenterPoint(aeBtnYes);
+                        Thread.Sleep(3000);
+                        Input.MoveToAndClick(pt);
+                    }
+                    else
+                    {
+                        string sErrorMessage = "No button  not found ------------:";
+                        //tester.Log(sErrorMessage);
+                        //testOK = false;
+                        System.Windows.MessageBox.Show("Error: " + sErrorMessage, "UIOpenBuilderDialogEvent: name = " + name);
+                    }
+            }
+        }
+        #endregion
     }
 }

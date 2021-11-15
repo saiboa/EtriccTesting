@@ -71,6 +71,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.buildProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.gbAutomaticTesting.SuspendLayout();
             this.gbManualTesting.SuspendLayout();
@@ -108,7 +109,8 @@
             // 
             this.configToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectToolStripMenuItem,
-            this.HostTestMenuItem});
+            this.HostTestMenuItem,
+            this.buildProjectToolStripMenuItem});
             this.configToolStripMenuItem.Name = "configToolStripMenuItem";
             this.configToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.configToolStripMenuItem.Text = "Extra";
@@ -471,6 +473,13 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "Test Definition:";
             // 
+            // buildProjectToolStripMenuItem
+            // 
+            this.buildProjectToolStripMenuItem.Name = "buildProjectToolStripMenuItem";
+            this.buildProjectToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.buildProjectToolStripMenuItem.Text = "BuildProject";
+            this.buildProjectToolStripMenuItem.Click += new System.EventHandler(this.buildProjectToolStripMenuItem_Click);
+            // 
             // ToolsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,8 +555,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-
-       
+        private System.Windows.Forms.ToolStripMenuItem buildProjectToolStripMenuItem;
     }
 }
 
